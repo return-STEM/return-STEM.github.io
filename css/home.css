@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "Ubuntu Light";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Light.ttf");
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("/assets/fonts/Inter/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("/assets/fonts/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Medium";
+    src: url("/assets/fonts/Inter/Inter-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand Regular";
+    src: url("/assets/fonts/Quicksand/Quicksand-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Jetbrains Mono";
+    src: url("/assets/fonts/JetBrains_Mono/JetBrainsMono-Thin.ttf");
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 10px;
+}
+
+#header {
+    font-size: 2rem; 
+}
+
+#nav-bar {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+}
+
+#logo-cont {
+    flex-grow: 1;
+    padding-left: 5em;
+    height: 3.6em;
+}
+
+#logo {
+    height: 3.6em;
+    padding-right: 1em;
+    float: left;
+}
+
+#logo-text {
+    font-family: "Jetbrains Mono";
+    font-size: 2em;
+    margin: 0.3em 0em;
+}
+
+#nav-cont {
+    flex-grow: 0;
+    text-align: right;
+    padding: 0em 3em 0em 0em;
+}
+
+.nav-link {
+    font-family: 'Ubuntu Light';
+    font-size: 1.4em;
+    display: inline-block;
+    margin: 0.6em 2em;
+    padding: 0.1em 0em;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: /*#6b9ac4*/ #E84275;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.07em;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: /*#6b9ac4*/ #E84275;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+#header-main {
+    display: flex;
+}
+
+#header-text-cont {
+    flex: 1;
+    padding: 3em 0em 0em 5em;
+}
+
+@keyframes fadeInOne {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTwo {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInThree {
+    0% {
+        opacity: 0;
+    }
+
+    67% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#header-title-1 {
+    font-family: "Inter Bold";
+    font-size: 4em;
+    margin: 0;
+    animation: 0.75s ease-in 0s 1 fadeInOne;
+    /*text-shadow: 0.05em 0.05em 0.05em #c9c9c9;*/
+}
+
+#header-title-2 {
+    font-family: "Inter Medium";
+    font-size: 3.5em;
+    margin: 0;
+    animation: 1.5s ease-in 0s 1 fadeInTwo;
+    /*text-shadow: 0.05em 0.05em 0.05em #c9c9c9;*/
+}
+
+#header-text {
+    font-family: "Quicksand Regular";
+    font-size: 1.5em;
+    padding-left: 0.25em;
+    animation: 2.25s ease-in 0s 1 fadeInThree;
+}
+
+#header-button {
+    margin-left: 0.25em;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #E84275;
+    border-width: 0.1em;
+    padding: 0.5em 0.75em;
+    font-family: "Quicksand Regular";
+    font-size: 1.25em;
+    animation: 3s ease-in 0s 1 fadeInTwo;
+}
+
+#header-button:hover {
+    background-color: #E84275;
+    color: white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#header-img-cont {
+    flex: 1;
+    text-align: right;
+    padding-right: 5em;
+    height: 27.5em
+}
+
+#header-graphic {
+    height: 27.5em;
+}
+
+#about {
+    background-color: #6B9AC4;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#why {
+    padding: 2em 3em;
+    padding-bottom: 0;
+    width: 30em;
+    margin: 0 auto;
+}
+
+.why-title {
+    font-family: "Inter Medium";
+    font-size: 2.5em;
+    color: white;
+}
+
+.why-text {
+    font-family: "Quicksand Regular";
+    color: white;
+}
+
+#why-slides {
+    display: flex;
+    padding: 0 2em 2em 2em;
+}
+
+#why-slides-text-cont {
+    margin: auto 0;
+}
+
+#why-slides-collage {
+    flex-grow: 2;
+    position: relative;
+    width: 75em;
+    height: 20em;
+}
+
+.why-slides-img {
+    width: 17.5em;
+    position: absolute;
+    box-shadow: 0.3em 0.3em 0.5em 0.35em #424242;
+}
+
+#why-slides-one {
+    top: 27.5%;
+    left: 5%;
+    z-index: 3;
+}
+
+#why-slides-two {
+    bottom: 0;
+    left: 17.5%;
+    z-index: 1;
+}
+
+#why-slides-three {
+    top: 15%;
+    right: 0;
+    z-index: 2;
+}
+
+#why-text-cont {
+    flex-grow: 1;
+}
+
+#courses {
+    background-color: #FFF3E1;
+    font-size: 2rem;
+    padding: 2em 2em;
+}
+
+#courses-header {
+    width: 45em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#courses-title {
+    font-family: "Inter Bold";
+    font-size: 3.5em;
+}
+
+#courses-desc {
+    font-family: "Quicksand Regular";
+    font-size: 1.5em;
+    margin: 0;
+}
