@@ -28,6 +28,10 @@
     src: url("/assets/fonts/JetBrains_Mono/JetBrainsMono-Thin.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
@@ -246,7 +250,7 @@ html {
 .why-slides-img {
     width: 17.5em;
     position: absolute;
-    box-shadow: 0.3em 0.3em 0.5em 0.35em #424242;
+    box-shadow: 0.3em 0.3em 0.5em 0.35em rgba(0, 0, 0, 0.5);
 }
 
 #why-slides-one {
@@ -292,4 +296,176 @@ html {
     font-family: "Quicksand Regular";
     font-size: 1.5em;
     margin: 0;
+    margin-bottom: 2em;
+}
+
+#courses-cont {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.course {
+    background-color: white;
+    width: 17.5em;
+    overflow: hidden;
+}
+
+.course:hover {
+    transform: scale(115%);
+    box-shadow: 0em 0em 1em 0.6em rgba(0, 0, 0, 0.25);
+    transition: 0.1s ease-in-out;
+}
+
+.course-img {
+    height: 12.5em;  
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.course-title {
+    font-family: "Inter Regular";
+    font-size: 1.5em;
+    padding: 0 0.5em;
+    text-align: center;
+}
+
+.course-bottom {
+    display: flex;
+}
+
+.course-bottom-half {
+    width: 8.75em;
+    padding: 0 1em;
+}
+
+.course-bottom-icon {
+    color: #E84275;
+    font-size: 1.2em;
+}
+
+.course-bottom-text {
+    font-family: "Quicksand Regular";
+    font-size: 1.1em;
+}
+
+.course-popup {
+    display: none;
+    z-index: 10;
+    padding: 5em 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#course-one-popup:target {
+    display: initial;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.popup-content {
+    background-color: white;
+    width: 50em;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.popup-cont-left {
+    width: 25em;
+    overflow: hidden;
+    height: 27.5em;
+    background-color: #64bdfa;
+}
+
+.popup-img {
+    height: 50%;
+    width: 100%;
+    transform: translateY(50%);
+}
+
+.popup-cont-right {
+    width: 19em;
+    padding: 1em 3em;
+}
+
+.popup-title {
+    font-family: "Inter Bold";
+}
+
+.popup-x {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    font-size: 2.25em;
+}
+
+.popup-x:hover {
+    color: #E84275;
+    transition: color 0.15s ease-in;
+}
+
+.popup-button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: #E84275;
+    border-width: 0.1em;
+    padding: 0.4em 0.7em;
+    font-family: "Quicksand Regular";
+    font-size: 1.1em;
+}
+
+.popup-button:hover {
+    background-color: #E84275;
+    color: white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.popup-list {
+    font-family: "Quicksand Regular";
+    font-size: 0.9em;
+}
+
+.popup-list-element {
+    margin-top: 0.75em;
+}
+
+#footer {
+    background-color: #464D77;
+    padding: 5em;
+    font-size: 2rem;
+}
+
+#social-buttons-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.social-button {
+    border-radius: 50%;
+    padding: 0.25em;
+    font-size: 2em;
+    height: 1.75em;
+    width: 1.75em;
+    background-color: transparent;
+    border: solid white;
+    color: white;
+    margin: 0 0.75em;
+}
+
+.social-button:hover {
+    background-color: white;
+    color: #464D77;
+    transition: 0.2s ease-in;
+}
+
+#footer-copyright {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1em;
+    font-family: "Quicksand Regular";
 }
