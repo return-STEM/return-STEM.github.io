@@ -4,13 +4,17 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="/css/home.css">
         <script src="https://kit.fontawesome.com/2213772279.js" crossorigin="anonymous"></script>
-
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+        <script src="/jquery/home.js"></script>
     </head>
     <body>
         <header id="header">
             <nav id="nav-bar">
                 <div id="logo-cont">    
-                        <img src="assets/img/Logo-New-Color.svg" id="logo">
+                        <img src="assets/img/Logo.svg" id="logo">
                         <h2 id="logo-text">return STEM;</h2>
                 </div>
                 <div id="nav-cont">
@@ -18,19 +22,34 @@
                     <a href="#about" class="nav-link">About</a>
                     <a href="#courses" class="nav-link">Courses</a>
                     <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank" class="nav-link">Contact</a>
+                    <input type="checkbox" id="nav-button">
+                    </input>
+                    <label for="nav-button" id="nav-small">
+                        <div class="nav-line" id="nav-line-one"></div>
+                        <div class="nav-line" id="nav-line-two"></div>
+                        <div class="nav-line" id="nav-line-three"></div>
+                    </label>
+                    <div id="nav-background">
+                    </div>
+                    <div id="nav-secondary">
+                        <a href="#" class="nav-secondary-link"">Home</a>
+                        <a href="#about" class="nav-secondary-link"">About</a>
+                        <a href="#courses" class="nav-secondary-link"">Courses</a>
+                        <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" class="nav-secondary-link" target="_blank">Contact</a>
+                    </div>
                 </div>
             </nav>
             <div id="header-main">
                 <div id="header-text-cont">
                     <h1 id="header-title-1">Programming</h1>
                     <h1 id="header-title-2">Taught <em>Right</em></h1>
-                    <p id="header-text">Free virtual programming classes for <br>grades 6-12</p>
+                    <p id="header-text">Free virtual programming classes for <br>grades 5-9</p>
                     <button id="header-button">
                         <a href="https://forms.gle/eR87wCvuWeWMi8X68" target="_blank">Sign Up Now &rarr;</a>
                     </button>
                 </div>
                 <div id="header-img-cont">
-                    <img src="assets/img/header-image-cropped-2.png" id="header-graphic">
+                    <img src="assets/img/header-image.png" id="header-graphic">
                 </div>
             </div>
         </header>
@@ -64,10 +83,10 @@
                     <p class="course-desc"></p>
                     <div class="course-bottom">
                         <span class="course-bottom-half">
-                            <h2 class="course-bottom-text">      <icon class="far fa-smile course-bottom-icon"></icon>     Beginner</h2>
+                            <h2 class="course-bottom-text"><icon class="far fa-smile course-bottom-icon"></icon> Beginner</h2>
                         </span>
                         <span class="course-bottom-half">
-                            <h2 class="course-bottom-text">     <icon class="far fa-hourglass course-bottom-icon"></icon> 4 Weeks</h2>
+                            <h2 class="course-bottom-text"><icon class="far fa-hourglass course-bottom-icon"></icon> 4 Weeks</h2>
                         </span>
                     </div>
                 </a>
@@ -80,10 +99,11 @@
                             <a href="#courses-cont" class="popup-x"><icon class="fas fa-times"></icon></a>
                             <h1 class="popup-title">Introduction to Programming</h1>
                             <ul class="popup-list">
-                                <li class="popup-list-element">Our Introduction to Programming course is designed to teach grades 5-8 how to create useful applications as they see fit, even without prior programming knowledge.
+                                <li class="popup-list-element">Our Introduction to Programming course is designed to teach grades 5-9 how to create useful applications as they see fit, even without prior programming knowledge.
                                 </li>
                                 <li class="popup-list-element">Students will meet with mentors for one hour sessions on Mondays, Wednesdays, and Fridays, over the course of 4 weeks. 
                                 </li>
+                                <li class="popup-list-element">Each session will take place from 2:00 pm to 3:00 pm EST</li>
                                 <li class="popup-list-element">These sessions will include information, discussion, and time for students to create their own programs based on what they want.</li>
                             </ul>
                             <button class="popup-button"><a href="https://forms.gle/eR87wCvuWeWMi8X68" target="_blank">Sign Up Now &rarr;</a></button>
@@ -94,8 +114,8 @@
         </section>
         <footer id="footer">
             <div id="social-buttons-cont">
-                <button class="social-button"><a><icon class="fab fa-instagram"></icon></a></button>
-                <button class="social-button"><a><icon class="fab fa-facebook-square"></icon></a></button>
+                <button class="social-button"><a href="https://www.instagram.com/returnstem/" target="_blank"><icon class="fab fa-instagram"></icon></a></button>
+                <button class="social-button"><a href="https://www.facebook.com/profile.php?id=100070855052861" target="_blank"><icon class="fab fa-facebook-square"></icon></a></button>
                 <button class="social-button"><a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank"><icon class="far fa-envelope"></icon></a></button>
             </div>
             <h1 id="footer-copyright">Copyright <icon class="far fa-copyright"></icon>  2021 All Rights Reserved</h1>
