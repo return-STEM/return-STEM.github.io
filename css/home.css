@@ -514,7 +514,6 @@ a, a:hover, a:focus, a:active {
 .popup-cont-left {
     flex-basis: 50%;
     flex-shrink: 0;
-    overflow: hidden;
     background-color: #64bdfa;
 }
 
@@ -609,7 +608,91 @@ a, a:hover, a:focus, a:active {
     font-family: "Quicksand Regular";
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2900px) and (max-width: 3000px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 2800px) and (max-width: 2900px) {
+    html {
+        font-size: 16.5px;
+    }
+}
+
+@media only screen and (min-width: 2700px) and (max-width: 2800px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 2600px) and (max-width: 2700px) {
+    html {
+        font-size: 15.5px;
+    }
+}
+
+@media only screen and (min-width: 2500px) and (max-width: 2600px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 2400px) and (max-width: 2500px) {
+    html {
+        font-size: 14.5px;
+    }
+}
+
+@media only screen and (min-width: 2300px) and (max-width: 2400px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 2200px) and (max-width: 2300px) {
+    html {
+        font-size: 13.5px;
+    }
+}
+
+@media only screen and (min-width: 2100px) and (max-width: 2200px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 2100px) {
+    html {
+        font-size: 12.5px;
+    }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 1900px) {
+    html {
+        font-size: 11.5px;
+    }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 1800px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+    html {
+        font-size: 10.5px;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1600px) {
     html {
         font-size: 10px;
     }
