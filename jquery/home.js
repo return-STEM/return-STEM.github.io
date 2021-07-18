@@ -1,4 +1,4 @@
-$(document).ready(function() {
+d$(document).ready(function() {
     $(".course").click(function(){
         $("html").addClass("overflow-hidden");
     });
