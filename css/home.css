@@ -47,7 +47,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 .overflow-hidden {
@@ -185,19 +184,19 @@ a, a:hover, a:focus, a:active {
     transform: scale(0);
     background-color: var(--pink);
     transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-#nav-button:checked ~ #nav-background {
-    transform: scale(40);
     z-index: 5;
 }
 
-@keyframes nav-appear {
+#nav-button:checked ~ #nav-background {
+    transform: scale(45);
+}
+
+@keyframes navSmallAppear {
     0% {
         opacity: 0;
     }
 
-    50% {
+    40% {
         opacity: 0;
     }
 
@@ -215,24 +214,22 @@ a, a:hover, a:focus, a:active {
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
     opacity: 0;
-    animation: 0.75s ease-in 0s 1 nav-appear;
+    animation: navSmallAppear 1s ease-out;
+    animation-fill-mode: forwards;
 }
 
 .nav-secondary-link {
     color: white;
     font-family: "Ubuntu Light";
-    font-size: 2em;
+    font-size: 2.25em;
     display: block;
     margin: 0.6em auto;
     padding-bottom: 0.1em;
     position: relative;
+    width: max-content;
 }
 
-.nav-secondary-link:visited {
-    color: white;
-}
-
-.nav-secondary-link:active {
+.nav-secondary-link:visited, .nav-secondary-link:active, .nav-secondary-link:focus {
     color: white;
 }
 
@@ -260,7 +257,6 @@ a, a:hover, a:focus, a:active {
 
 #nav-button:checked ~ #nav-secondary {
     display: initial;
-    opacity: 1;
 }
 
 #header-main {
@@ -327,7 +323,8 @@ a, a:hover, a:focus, a:active {
 #header-text {
     font-family: "Quicksand Regular";
     font-size: 1.5em;
-    padding-left: 0.25em;
+    padding: 1em 0 1em 0.25em;
+    margin: 0;
     animation: 2.25s ease-in 0s 1 fadeInThree;
 }
 
@@ -336,12 +333,13 @@ a, a:hover, a:focus, a:active {
     background-color: transparent;
     border-style: solid;
     border-color: var(--pink);
-    border-width: 0.1em;
     padding: 0.5em 0.75em;
+    border-width: 0.1em;
     font-family: "Quicksand Regular";
     font-size: 1.25em;
     animation: 3s ease-in 0s 1 fadeInTwo;
     transition: 0.25s ease-in;
+    width: max-content;
 }
 
 #header-button:hover {
@@ -372,7 +370,7 @@ a, a:hover, a:focus, a:active {
 #why {
     padding: 2em 3em;
     padding-bottom: 0;
-    width: 30em;
+    width: 32.5em;
     margin: 0 auto;
 }
 
@@ -385,11 +383,12 @@ a, a:hover, a:focus, a:active {
 .why-text {
     font-family: "Quicksand Regular";
     color: white;
+    font-size: 1.125em;
 }
 
 #why-slides {
     display: flex;
-    padding: 0 0vw 2em 2vw;
+    padding: 0 0vw 0 2vw;
 }
 
 #why-slides-text-cont {
@@ -433,6 +432,13 @@ a, a:hover, a:focus, a:active {
     flex-grow: 1;
 }
 
+#why-free {
+    padding: 2em 3em;
+    padding-top: 0em;
+    width: 32.5em;
+    margin: 0 auto;
+}
+
 #courses {
     background-color: var(--latte);
     font-size: 2rem;
@@ -440,13 +446,14 @@ a, a:hover, a:focus, a:active {
 }
 
 #courses-header {
+    font-size: 2.4rem;
     width: 45em;
     text-align: center;
     margin: 0 auto;
 }
 
 #courses-title {
-    font-family: "Inter Bold";
+    font-family: "Inter Medium";
     font-size: 3.5em;
 }
 
@@ -483,9 +490,10 @@ a, a:hover, a:focus, a:active {
 
 .course-title {
     font-family: "Inter Regular";
-    font-size: 1.5em;
+    font-size: 1.75em;
     padding: 0 0.5em;
     text-align: center;
+    margin: 0.75em 0 0.5em 0;
 }
 
 .course-bottom {
@@ -494,17 +502,26 @@ a, a:hover, a:focus, a:active {
 
 .course-bottom-half {
     width: 8.75em;
-    padding: 0 1em;
+}
+
+.course-bottom-left {
+    padding-left: 1em;
+    text-align: left;
+}
+
+.course-bottom-right {
+    padding-right: 1em;
+    text-align: right;
 }
 
 .course-bottom-icon {
     color: var(--pink);
-    font-size: 1.2em;
+    font-size: 1.35em;
 }
 
 .course-bottom-text {
     font-family: "Quicksand Regular";
-    font-size: 1.1em;
+    font-size: 1.25em;
 }
 
 .course-popup {
@@ -617,8 +634,9 @@ a, a:hover, a:focus, a:active {
     border-width: 0.1em;
     padding: 0.4em 0.7em;
     font-family: "Quicksand Regular";
-    font-size: 1.1em;
+    font-size: 1.25em;
     transition: 0.25s ease-in;
+    width: max-content;
 }
 
 .popup-button:hover {
@@ -644,6 +662,10 @@ a, a:hover, a:focus, a:active {
     transition: 0.2s ease;
 }
 
+.popup-link:visited, .popup-link:active, .popup-link:focus {
+    text-decoration: underline;
+}
+
 .popup-link:hover {
     color: var(--pink);
     text-decoration: underline;
@@ -663,14 +685,15 @@ a, a:hover, a:focus, a:active {
 .social-button {
     border-radius: 50%;
     padding: 0.25em;
-    font-size: 2em;
-    height: 1.75em;
-    width: 1.75em;
+    font-size: 2.25em;
+    height: 1em;
+    width: 1em;
     background-color: transparent;
-    border: solid white;
+    border: solid white 0.1em;
     color: white;
     margin: 0 0.75em;
     transition: 0.2s ease-in;
+    text-align: center;
 }
 
 .social-button:hover {
@@ -680,7 +703,7 @@ a, a:hover, a:focus, a:active {
 
 #footer-copyright {
     color: white;
-    font-size: 1em;
+    font-size: 1.25em;
     text-align: center;
     margin-top: 1em;
     font-family: "Quicksand Regular";
@@ -866,15 +889,19 @@ a, a:hover, a:focus, a:active {
 
 @media only screen and (max-width: 700px) {
     :root {
-        --header-image: 57.5vw;
+        --header-image: 70vw;
         --popup-width: 31em;
-        --popup-height: 34em;
+        --popup-height: 41em;
     }
 
     #header-text-cont {
-        font-size: 2.25rem;
+        font-size: 2.75rem;
         text-align: center;
         padding: 1em 2em;
+    }
+
+    #header-button {
+        margin: 0 auto;
     }
 
     #header-main {
@@ -886,6 +913,10 @@ a, a:hover, a:focus, a:active {
         padding: 0;
         margin-top: 2.5em;
         text-align: center;
+    }
+
+    #about {
+        font-size: 3.25em;
     }
 
     #why {
@@ -916,13 +947,18 @@ a, a:hover, a:focus, a:active {
     }
     
     #why-slides-two {
-        bottom: 10%;
-        left: 17.5%;
+        bottom: 7.5%;
+        left: 20%;
     }
     
     #why-slides-three {
         top: 2.5%;
         right: 5%;
+    }
+
+    #why-free {
+        width: 80vw;
+        padding: 0 0 1.75em 0;
     }
 
     #courses-header {
@@ -938,11 +974,11 @@ a, a:hover, a:focus, a:active {
     }
     
     .popup-title {
-        font-size: 2.25em;
+        font-size: 2.7em;
     }
 
     .popup-list-element {
-        font-size: 1.15em;
+        font-size: 1.3em;
     }
 
     .popup-list {
@@ -950,8 +986,8 @@ a, a:hover, a:focus, a:active {
     }
 
     .social-button {
-        height: 1.75em;
-        width: 1.75em;
+        height: 1em;
+        width: 1em;
         font-size: 2.25em;
     }
 }
@@ -968,13 +1004,52 @@ a, a:hover, a:focus, a:active {
     }
 }
 
+@media only screen and (max-width: 550px) {
+
+    #header-text-cont {
+        font-size: 2.5rem;
+    }
+
+    .why-slides-img {
+        width: 14em;
+    }
+
+    #why-slides-collage {
+        height: 15em;
+    }
+}
+
 @media only screen and (min-width: 350px) and (max-width: 450px) {
     html {
         font-size: 5px;
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
+    :root {
+        --header-image: 80vw;
+    }
+
+    #header-text-cont {
+        font-size: 2.2rem;
+    }
+
+    #about {
+        font-size: 3.1rem;
+    }
+
+    #why-slides-collage {
+        flex-basis: 22.5em;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+    html {
+        font-size: 4.5px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
     html {
         font-size: 4px;
     }
