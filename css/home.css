@@ -505,18 +505,18 @@ a, a:hover, a:focus, a:active {
 }
 
 .course-bottom-left {
-    padding-left: 1em;
+    padding-left: 0.75em;
     text-align: left;
 }
 
 .course-bottom-right {
-    padding-right: 1em;
+    padding-right: 0.75em;
     text-align: right;
 }
 
 .course-bottom-icon {
     color: var(--pink);
-    font-size: 1.35em;
+    font-size: 1.1em;
 }
 
 .course-bottom-text {
