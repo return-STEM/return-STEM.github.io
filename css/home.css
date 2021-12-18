@@ -506,7 +506,7 @@ a, a:hover, a:focus, a:active {
     font-size: 1.75em;
     padding: 0 0.5em;
     text-align: center;
-    margin: 0.75em 0 0.5em 0;
+    margin: 0.5em 0 0.2em 0;
 }
 
 .course-bottom {
@@ -535,6 +535,68 @@ a, a:hover, a:focus, a:active {
 .course-bottom-text {
     font-family: "Quicksand Regular";
     font-size: 1.25em;
+}
+
+.course-button-cont
+{
+    padding: 1em;
+    padding-top: 0.25em;
+    text-align: center;
+}
+
+.course-button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--pink);
+    border-width: 0.1em;
+    padding: 0.4em 0.7em;
+    font-family: "Quicksand Regular";
+    font-size: 1.25em;
+    transition: 0.25s ease-in;
+    width: max-content;
+}
+
+.course-button-anim
+{
+    display: inline-block;
+}
+
+.course-button-anim:hover > .course-button {
+    background-color: var(--pink);
+    color: white;
+    cursor: pointer;
+}
+
+.button-disabled:active
+{
+    background-color: var(--pink);
+    color: white;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.button-disable-active
+{
+    display: none;
+}
+
+.button-disabled:hover .button-disable-active
+{
+    display: initial;
+}
+
+.button-disabled:active .button-disable-active
+{
+    display: initial;
+}
+
+.button-disabled:hover .button-disable-default
+{
+    display: none;
+} 
+.button-disabled:active .button-disable-default
+{
+    display: none;
 }
 
 .course-popup {
@@ -662,6 +724,7 @@ a, a:hover, a:focus, a:active {
 .popup-button:hover {
     background-color: var(--pink);
     color: white;
+    cursor: pointer;
 }
 
 .popup-list {
