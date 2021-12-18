@@ -47,6 +47,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .overflow-hidden {
@@ -461,13 +462,13 @@ a, a:hover, a:focus, a:active {
     font-family: "Quicksand Regular";
     font-size: 1.5em;
     margin: 0;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
 }
 
 #courses-cont {
     padding: 2em;
     display: flex;
-    justify-content: center;
+    overflow: auto;
 }
 
 .course {
@@ -475,6 +476,18 @@ a, a:hover, a:focus, a:active {
     width: 17.5em;
     overflow: hidden;
     transition: 0.1s ease-in-out;
+    margin: 1.5em 2em;
+    min-width: 17.5em;
+}
+
+#course-one
+{
+    margin-left: auto;
+}
+
+#course-two
+{
+    margin-right: auto;
 }
 
 .course:hover {
@@ -530,7 +543,7 @@ a, a:hover, a:focus, a:active {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-#course-one-popup:target {
+.course-popup:target {
     display: initial;
     position: fixed;
     width: 100%;
@@ -567,7 +580,14 @@ a, a:hover, a:focus, a:active {
 .popup-cont-left {
     flex-basis: 50%;
     flex-shrink: 0;
+}
+
+.popup-cont-left-one {
     background-color: #64bdfa;
+}
+
+.popup-cont-left-two {
+    background-color: #DAF6D7;
 }
 
 .popup-img {

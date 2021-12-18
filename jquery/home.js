@@ -18,7 +18,7 @@ $(function() {
         $("#nav-button").prop("checked", false);
         $("html").removeClass("overflow-hidden");
     });
-    let currentSlide = [0];
+    let currentSlide = [0, 0];
     $(".popup-navigate-right").on("click", function(){
         var popupWidth = parseFloat($(":root").css("--popup-width"));
         if ($(this).parent().next().length) {
