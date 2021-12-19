@@ -1,0 +1,10 @@
+{
+  "code": "intropy",
+  "title": "Introduction to Programming",
+  "difficulty": "Beginner",
+  "length": "10 Weeks",
+  "active": false,
+  "meta": {
+    "thumbnail": "assets/img/pythoncourse.png"
+  }
+}

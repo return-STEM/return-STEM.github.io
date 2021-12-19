@@ -1,0 +1,53 @@
+{
+  "slides": [
+    {
+      "image": "assets/img/pygame.svg",
+      "background": "#DAF6D8",
+      "title": "Pygame Python Workshop",
+      "points": [
+        "Our Pygame workshop will guide students through the process of coding a 2D platformer game in Python. Prior knowledge of Python is highly recommended.",
+        "Mentors will guide the students to complete the game development in a single 2.5 hour session.",
+        "Students will learn many of the game development fundamentals and various python concepts.",
+        "All assets are provided and students will be taken through each step of the process collaboratively."
+      ],
+      "button": {
+        "trueText": "Sign Up Now",
+        "falseText": "Returning Soon",
+        "state": true,
+        "action": "pygame/signup.html"
+      }
+    },
+    {
+      "image": "assets/img/pygame.svg",
+      "background": "#DAF6D8",
+      "title": "Course Layout Information",
+      "points": [
+        "Modular and object oriented programming",
+        "Applications of programming",
+        "2D character movement mechanics and physics",
+        "Basic procedural map generation and camera movement with the character",
+        "Game design stages (brainstorm, prototype, playtesting, debugging, and polishing)",
+        "Reading and understanding documentation",
+        "Drawing and updating to the screen",
+        "Handling user input and switching through scenes"
+      ]
+    },
+    {
+      "image": "assets/img/pygame.svg",
+      "background": "#DAF6D8",
+      "title": "Course Prerequisites",
+      "points": [
+        "Students will need a discord account. Our workshop will take place on discord.",
+        "Students will need internet access during our workshop. If they wish to verbally ask questions, they will need a working mic, though it is not a requirement since they can still type their questions.",
+        "Students will need intermediate experience with python.",
+        "Rather than download software, students will use repl.it, a free online browser IDE. We will show students how to set it up, though directions are available here."
+      ],
+      "button": {
+        "trueText": "Game Assets",
+        "falseText": "Game Assets",
+        "state": true,
+        "action": "https://drive.google.com/drive/folders/1v5E9hXh882_YlKc4pN3AJtZiQlQx2nQ8?usp=sharing"
+      }
+    }
+  ]
+}

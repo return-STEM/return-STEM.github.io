@@ -1,0 +1,49 @@
+{
+  "slides": [
+    {
+      "image": "assets/img/pythoncourse.png",
+      "background": "#64BDFA",
+      "title": "Introduction to Programming",
+      "points": [
+        "Our Introduction to Programming course is designed to teach middle school and high school students how to create useful applications as they see fit, even without prior programming knowledge.",
+        "Students will meet with mentors once weekly for a one hour session over ten weeks.",
+        "Students can choose different timings as fits their schedule.",
+        "These sessions will include information, discussion, and time for students to create their own programs based on what they want."
+      ],
+      "button": {
+        "trueText": "Sign Up Now",
+        "falseText": "Returning Soon",
+        "state": false,
+        "action": ""
+      }
+    },
+    {
+      "image": "assets/img/pythoncourse.png",
+      "background": "#64BDFA",
+      "title": "Course Layout Information",
+      "points": [
+        "Lessons 1-3 go over how programming works, variables types, and console I/0 manipulation.",
+        "Lessons 4-6 go over mathematical operations in programming, conditional logic, and control structures.",
+        "Lessons 7-9 go over data structures, functions, and methods to debug python code.",
+        "Lesson 10 goes over problem solving with programming",
+        "After the course is a 2 day mini-hackathon with workshops and prizes."
+      ],
+      "button": {
+        "trueText": "Course Material",
+        "falseText": "",
+        "state": true,
+        "action": "intro-python-mat.html"
+      }
+    },
+    {
+      "image": "assets/img/pythoncourse.png",
+      "background": "#64BDFA",
+      "title": "Course Prerequisites",
+      "points": [
+        "Students will need a discord account as we will be communicating most of our important information through the platform. Our lessons will take place on discord.",
+        "Students will need internet access during our course because our lessons will be live. If they wish to verbally ask questions, they will need a working mic, though it is not a requirement since they can still type their questions.",
+        "Rather than download software, students will use repl.it, a free online browser IDE. We will show students how to set it up in the course, though directions are available here."
+      ]
+    }
+  ]
+}

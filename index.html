@@ -1,258 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Return STEM; offers free Online Programming Courses. Sign up for our introduction to python course, with more in development.">
-        <meta name="keywords" content="Python, Free, Learning, Online, Virtual, Programming">
-        <title>Return STEM;</title>
-        <link rel="shortcut icon" href="assets/img/Logo.svg">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/home.css">
-        <script src="https://kit.fontawesome.com/2213772279.js" crossorigin="anonymous"></script>
-        <script
-			  src="https://code.jquery.com/jquery-3.6.0.min.js"
-			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			  crossorigin="anonymous"></script>
-        <script src="jquery/home.js"></script>
-    </head>
-    <body>
-        <header id="header">
-            <nav id="nav-bar">
-                <div id="logo-cont">    
-                        <img src="assets/img/Logo.svg" id="logo" alt="logo">
-                        <h1 id="logo-text">Return STEM;</h1>
-                </div>
-                <div id="nav-cont">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#courses" class="nav-link">Courses</a>
-                    <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank" class="nav-link">Contact</a>
-                    <input type="checkbox" id="nav-button">
-                    <label for="nav-button" id="nav-small">
-                        <span class="nav-line" id="nav-line-one"></span>
-                        <span class="nav-line" id="nav-line-two"></span>
-                        <span class="nav-line" id="nav-line-three"></span>
-                    </label>
-                    <div id="nav-background">
-                    </div>
-                    <div id="nav-secondary">
-                        <a href="#" class="nav-secondary-link">Home</a>
-                        <a href="#about" class="nav-secondary-link">About</a>
-                        <a href="#courses" class="nav-secondary-link">Courses</a>
-                        <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" class="nav-secondary-link" target="_blank">Contact</a>
-                    </div>
-                </div>
-            </nav>
-            <div id="header-main">
-                <div id="header-text-cont">
-                    <h1 id="header-title-1">Programming</h1>
-                    <h2 id="header-title-2">Taught <em>Right</em></h2>
-                    <p id="header-text">Free virtual programming classes for <br>grades 5-12</p>
-                    <div id="header-button"><a href="signup.html" target="_blank">Sign Up Now &rarr;</a></div>
-                </div>
-                <div id="header-img-cont">
-                    <img src="assets/img/header-image.png" id="header-graphic" alt="programming STEM graphic">
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Return STEM; offers free Online Programming Courses. Sign up for our introduction to python course, with more in development.">
+    <meta name="keywords" content="Python, Free, Learning, Online, Virtual, Programming">
+    <title>Return STEM;</title>
+    <link rel="shortcut icon" href="assets/img/Logo.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/2213772279.js" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="jquery/home.js"></script>
+    <script type="module" src="course-card.js"></script>
+    <script type="module" src="course-modal.js"></script>
+</head>
+<body>
+<header id="header">
+    <nav id="nav-bar">
+        <div id="logo-cont">
+            <img src="assets/img/Logo.svg" id="logo" alt="logo">
+            <h1 id="logo-text">Return STEM;</h1>
+        </div>
+        <div id="nav-cont">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#courses" class="nav-link">Courses</a>
+            <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com"
+               target="_blank" class="nav-link">Contact</a>
+            <input type="checkbox" id="nav-button">
+            <label for="nav-button" id="nav-small">
+                <span class="nav-line" id="nav-line-one"></span>
+                <span class="nav-line" id="nav-line-two"></span>
+                <span class="nav-line" id="nav-line-three"></span>
+            </label>
+            <div id="nav-background">
             </div>
-        </header>
-        <section id="about">
-            <div id="why">
-                <h3 class="why-title">Why us?</h3>
-                <p class="why-text">The Return STEM; team is made up of high school students from the Middlesex County Academy with many accomplishments in the field of programming and computer science. We’ve made original material specifically designed for our unique courses, and our mentors are dedicated to helping students learn programming. 
-                </p>
+            <div id="nav-secondary">
+                <a href="#" class="nav-secondary-link">Home</a>
+                <a href="#about" class="nav-secondary-link">About</a>
+                <a href="#courses" class="nav-secondary-link">Courses</a>
+                <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com"
+                   class="nav-secondary-link" target="_blank">Contact</a>
             </div>
-            <div id="why-slides">
-                <div id="why-slides-text-cont">
-                    <h2 class="why-title">Quality Course Material</h2>
-                    <p class="why-text">Our courses are all carefully created by our mentors. They include essential information, tips, programming examples, and common questions along with their answers.</p>
-                </div>
-                <div id="why-slides-collage">
-                    <img class="why-slides-img" id="why-slides-one" src="assets/img/slideCollageTwo.png" alt="example slides image 1">
-                    <img class="why-slides-img" id="why-slides-two" src="assets/img/slideCollageOne.png" alt="example slides image 2">
-                    <img class="why-slides-img" id="why-slides-three" src="assets/img/slideCollageThree.png" alt="example slides image 3">
-                </div>
-            </div>
-            <div id="why-free">
-                <h2 class="why-title">Free, Free, and Free</h2>
-                <p class="why-text">Return STEM; is committed to making programming accessible to all people, no matter their background. All of our courses are 100% free and all material for every course is available in their corresponding description.</p>
-            </div>
-        </section>
-        <section id="courses">
-            <div id="courses-header">
-                <h4 id="courses-title">Courses and Workshops</h4>
-                <p id="courses-desc">We are currently developing many courses and workshops for people of any skill level. Currently, signup is available for our Pygame workshop. Each of our courses and workshops is designed by our organization and will be available to review over by students who signup for our lessons. Click to explore our courses and workshops below.</p>
-            </div>
-            <div id="courses-cont">
-                <a id="course-one" class="course" href="#course-one-popup">
-                    <img src="assets/img/pythoncourse.png" class="course-img" alt="python">
-                    <h2 class="course-title">Introduction to Programming</h2>
-                    <div class="course-bottom">
-                        <div class="course-bottom-half course-bottom-left">
-                            <h4 class="course-bottom-text"><span class="far fa-smile course-bottom-icon"></span> Beginner</h4>
-                        </div>
-                        <div class="course-bottom-half course-bottom-right">
-                            <h4 class="course-bottom-text"><span class="far fa-hourglass course-bottom-icon"></span> 10 Weeks</h4>
-                        </div>
-                    </div>
-                    <form class="course-button-cont" action="">
-                        <div class="course-button-anim">
-                            <button class="course-button button-disabled"><span class="button-disable-default">Sign Up Now &rarr;</span><span class="button-disable-active">Returning Soon <span class="fas fa-clock"></span></span></button>
-                        </div>
-                    </form>
-                </a>
-                <div class="course-popup" id="course-one-popup">
-                    <div class="popup-container">
-                        <div class="popup-content" data-popup="0">
-                            <div class="popup-content-int" data-slide="1">
-                                <div class="popup-navigate-left popup-navigate"><span class="fas fa-chevron-left"></span></div>
-                                <div class="popup-navigate-right popup-navigate"><span class="fas fa-chevron-right"></span></div>
-                                <div class="popup-cont-left popup-cont-left-one">
-                                    <img src="assets/img/pythoncourse.png" alt="python" class="popup-img">
-                                </div>
-                                <div class="popup-cont-right">
-                                    <a href="#courses-cont" class="popup-x"><span class="fas fa-times"></span></a>
-                                    <h4 class="popup-title">Introduction to Programming</h4>
-                                    <ul class="popup-list">
-                                        <li class="popup-list-element">Our Introduction to Programming course is designed to teach middle school and high school students how to create useful applications as they see fit, even without prior programming knowledge.
-                                        </li>
-                                        <li class="popup-list-element">Students will meet with mentors once weekly for a one hour session over ten weeks. 
-                                        </li>
-                                        <li class="popup-list-element">Students can choose different timings as fits their schedule.</li>
-                                        <li class="popup-list-element">These sessions will include information, discussion, and time for students to create their own programs based on what they want.</li>
-                                    </ul>
-                                    <form class="" action="signup.html" target="_blank"><button class="popup-button button-disabled"><span class="button-disable-default">Sign Up Now &rarr;</span><span class="button-disable-active">Returning Soon <span class="fas fa-clock"></span></span></button></form>
-                                </div>
-                            </div>
-                            <div class="popup-content-int" data-slide="2">
-                                <div class="popup-navigate-left popup-navigate"><span class="fas fa-chevron-left"></span></div>
-                                <div class="popup-navigate-right popup-navigate"><span class="fas fa-chevron-right"></span></div>
-                                <div class="popup-cont-left popup-cont-left-one">
-                                    <img src="assets/img/pythoncourse.png" alt="python" class="popup-img">
-                                </div>
-                                <div class="popup-cont-right">
-                                    <a href="#courses-cont" class="popup-x"><span class="fas fa-times"></span></a>
-                                    <h4 class="popup-title">Course Layout Information</h4>
-                                    <ul class="popup-list">
-                                        <li class="popup-list-element">Lessons 1-3 go over how programming works, variables types, and console IO/ manipulation.</li>
-                                        <li class="popup-list-element">Lessons 4-6 go over mathematical operations in programming, conditional logic, and control structures.</li>
-                                        <li class="popup-list-element">Lessons 7-9 go over data structures, functions, and methods to debug python code.</li>
-                                        <li class="popup-list-element">Lesson 10 goes over problem solving with programming</li>
-                                        <li class="popup-list-element">After the course is a 2 day mini-hackathon with workshops and prizes.</li>
-                                    </ul>
-                                    <div class="popup-button"><a href="intro-python-mat.html" target="_blank">Course Material &rarr;</a></div>
-                                </div>
-                            </div>
-                            <div class="popup-content-int" data-slide="3">
-                                <div class="popup-navigate-left popup-navigate"><span class="fas fa-chevron-left"></span></div>
-                                <div class="popup-navigate-right popup-navigate"><span class="fas fa-chevron-right"></span></div>
-                                <div class="popup-cont-left popup-cont-left-one">
-                                    <img src="assets/img/pythoncourse.png" alt="python" class="popup-img">
-                                </div>
-                                <div class="popup-cont-right">
-                                    <a href="#courses-cont" class="popup-x"><span class="fas fa-times"></span></a>
-                                    <h4 class="popup-title">Course Prerequisites</h4>
-                                    <ul class="popup-list">
-                                        <li class="popup-list-element">Students will need a discord account as we will be communicating most of our important information through the platform. Our lessons will take place on discord.</li>
-                                        <li class="popup-list-element">Students will need internet access during our course because our lessons will be live. If they wish to verbally ask questions, they will need a working mic, though it is not a requirement since they can still type their questions.</li>
-                                        <li class="popup-list-element">Rather than download software, students will use <a href="https://replit.com/" class="popup-link" target="_blank">repl.it</a>, a free online browser IDE. We will show students how to set it up in the course, though directions are available <a href="replit.html" class="popup-link" target="_blank">here</a>.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a id="course-two" class="course" href="#course-two-popup">
-                    <img src="assets/img/pygame.svg" class="course-img" alt="pygame">
-                    <h2 class="course-title">Pygame Workshop</h2>
-                    <div class="course-bottom">
-                        <div class="course-bottom-half course-bottom-left">
-                            <h4 class="course-bottom-text"><span class="far fa-meh course-bottom-icon"></span> Moderate</h4>
-                        </div>
-                        <div class="course-bottom-half course-bottom-right">
-                            <h4 class="course-bottom-text"><span class="far fa-hourglass course-bottom-icon"></span> 2.5 Hours</h4>
-                        </div>
-                    </div>
-                    <form class="course-button-cont" action="pygame/signup.html" target="_blank">
-                        <div class="course-button-anim">
-                            <button class="course-button"><span class="button-disable-default">Sign Up Now &rarr;</span><span class="button-disable-active">Returning Soon <span class="fas fa-clock"></span></span></button>
-                        </div>
-                    </form>
-                </a>
-                <div class="course-popup" id="course-two-popup">
-                    <div class="popup-container">
-                        <div class="popup-content" data-popup="1">
-                            <div class="popup-content-int" data-slide="1">
-                                <div class="popup-navigate-left popup-navigate"><span class="fas fa-chevron-left"></span></div>
-                                <div class="popup-navigate-right popup-navigate"><span class="fas fa-chevron-right"></span></div>
-                                <div class="popup-cont-left popup-cont-left-two">
-                                    <img src="assets/img/pygame.svg" alt="pygame" class="popup-img">
-                                </div>
-                                <div class="popup-cont-right">
-                                    <a href="#courses-cont" class="popup-x"><span class="fas fa-times"></span></a>
-                                    <h4 class="popup-title">Pygame Python Workshop</h4>
-                                    <ul class="popup-list">
-                                        <li class="popup-list-element">Our Pygame workshop will guide students through the process of coding a 2D platformer game in Python. Prior knowledge of Python is highly recommended.
-                                        </li>
-                                        <li class="popup-list-element">Mentors will guide the students to complete the game development in a single 2.5 hour session.
-                                        </li>
-                                        <li class="popup-list-element">Students will learn many of the game development fundamentals and various python concepts.</li>
-                                        <li class="popup-list-element">All assets are provided and students will be taken through each step of the process collaboratively.</li>
-                                    </ul>
-                                    <div class="popup-button"><a href="pygame/signup.html" target="_blank"><span class="button-disable-default">Sign Up Now &rarr;</span><span class="button-disable-active">Returning Soon <span class="fas fa-clock"></span></span></a></div>
-                                </div>
-                            </div>
-                            <div class="popup-content-int" data-slide="2">
-                                <div class="popup-navigate-left popup-navigate"><span class="fas fa-chevron-left"></span></div>
-                                <div class="popup-navigate-right popup-navigate"><span class="fas fa-chevron-right"></span></div>
-                                <div class="popup-cont-left popup-cont-left-two">
-                                    <img src="assets/img/pygame.svg" alt="pygame" class="popup-img">
-                                </div>
-                                <div class="popup-cont-right">
-                                    <a href="#courses-cont" class="popup-x"><span class="fas fa-times"></span></a>
-                                    <h4 class="popup-title">Concepts Learned</h4>
-                                    <ul class="popup-list">
-                                        <li class="popup-list-element">Modular and object oriented programming</li>
-                                        <li class="popup-list-element">Applications of programming</li>
-                                        <li class="popup-list-element">2D character movement mechanics and physics</li>
-                                        <li class="popup-list-element">Basic procedural map generation and camera movement with the character</li>
-                                        <li class="popup-list-element">Game design stages (brainstorm, prototype, playtesting, debugging, and polishing)</li>
-                                        <li class="popup-list-element">Reading and understanding documentation</li>
-                                        <li class="popup-list-element">Drawing and updating to the screen</li>
-                                        <li class="popup-list-element">Handling user input and switching through scenes</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="popup-content-int" data-slide="3">
-                                <div class="popup-navigate-left popup-navigate"><span class="fas fa-chevron-left"></span></div>
-                                <div class="popup-navigate-right popup-navigate"><span class="fas fa-chevron-right"></span></div>
-                                <div class="popup-cont-left popup-cont-left-two">
-                                    <img src="assets/img/pygame.svg" alt="pygame" class="popup-img">
-                                </div>
-                                <div class="popup-cont-right">
-                                    <a href="#courses-cont" class="popup-x"><span class="fas fa-times"></span></a>
-                                    <h4 class="popup-title">Course Prerequisites</h4>
-                                    <ul class="popup-list">
-                                        <li class="popup-list-element">Students will need a discord account. Our workshop will take place on discord.</li>
-                                        <li class="popup-list-element">Students will need internet access during our workshop. If they wish to verbally ask questions, they will need a working mic, though it is not a requirement since they can still type their questions.</li>
-                                        <li class="popup-list-element">Students will need intermediate experience with python.</li>
-                                        <li class="popup-list-element">Rather than download software, students will use <a href="https://replit.com/" class="popup-link" target="_blank">repl.it</a>, a free online browser IDE. We will show students how to set it up, though directions are available <a href="replit.html" class="popup-link" target="_blank">here</a>.</li>
-                                    </ul>
-                                    <div class="popup-button"><a href="https://drive.google.com/drive/folders/1v5E9hXh882_YlKc4pN3AJtZiQlQx2nQ8?usp=sharing" target="_blank">Game Assets &rarr;</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer id="footer">
-            <div id="social-buttons-cont">
-                <div class="social-button"><a href="https://www.instagram.com/returnstem/" target="_blank"><span class="fab fa-instagram"></span></a></div>
-                <div class="social-button"><a href="https://www.facebook.com/profile.php?id=100070855052861" target="_blank"><span class="fab fa-facebook-square"></span></a></div>
-                <div class="social-button"><a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank"><span class="far fa-envelope"></span></a></div>
-            </div>
-            <h4 id="footer-copyright">Copyright <span class="far fa-copyright"></span>  2021 All Rights Reserved</h4>
-        </footer>
-    </body>
+        </div>
+    </nav>
+    <div id="header-main">
+        <div id="header-text-cont">
+            <h1 id="header-title-1">Programming</h1>
+            <h2 id="header-title-2">Taught <em>Right</em></h2>
+            <p id="header-text">Free virtual programming classes for <br>grades 5-12</p>
+            <div id="header-button"><a href="signup.html" target="_blank">Sign Up Now &rarr;</a></div>
+        </div>
+        <div id="header-img-cont">
+            <img src="assets/img/header-image.png" id="header-graphic" alt="programming STEM graphic">
+        </div>
+    </div>
+</header>
+<section id="about">
+    <div id="why">
+        <h3 class="why-title">Why us?</h3>
+        <p class="why-text">The Return STEM; team is made up of high school students from the Middlesex County Academy
+            with many accomplishments in the field of programming and computer science. We’ve made original material
+            specifically designed for our unique courses, and our mentors are dedicated to helping students learn
+            programming.
+        </p>
+    </div>
+    <div id="why-slides">
+        <div id="why-slides-text-cont">
+            <h2 class="why-title">Quality Course Material</h2>
+            <p class="why-text">Our courses are all carefully created by our mentors. They include essential
+                information, tips, programming examples, and common questions along with their answers.</p>
+        </div>
+        <div id="why-slides-collage">
+            <img class="why-slides-img" id="why-slides-one" src="assets/img/slideCollageTwo.png"
+                 alt="example slides image 1">
+            <img class="why-slides-img" id="why-slides-two" src="assets/img/slideCollageOne.png"
+                 alt="example slides image 2">
+            <img class="why-slides-img" id="why-slides-three" src="assets/img/slideCollageThree.png"
+                 alt="example slides image 3">
+        </div>
+    </div>
+    <div id="why-free">
+        <h2 class="why-title">Free, Free, and Free</h2>
+        <p class="why-text">Return STEM; is committed to making programming accessible to all people, no matter their
+            background. All of our courses are 100% free and all material for every course is available in their
+            corresponding description.</p>
+    </div>
+</section>
+<section id="courses">
+    <div id="courses-header">
+        <h4 id="courses-title">Courses and Workshops</h4>
+        <p id="courses-desc">We are currently developing many courses and workshops for people of any skill level.
+            Currently, signup is available for our Pygame workshop. Each of our courses and workshops is designed by our
+            organization and will be available to review over by students who signup for our lessons. Click to explore
+            our courses and workshops below.</p>
+    </div>
+    <div id="courses-cont">
+        <course-card course="intropy"></course-card>
+
+        <course-card course="wkshppygame"></course-card>
+    </div>
+</section>
+<footer id="footer">
+    <div id="social-buttons-cont">
+        <div class="social-button"><a href="https://www.instagram.com/returnstem/" target="_blank"><span
+                class="fab fa-instagram"></span></a></div>
+        <div class="social-button"><a href="https://www.facebook.com/profile.php?id=100070855052861"
+                                      target="_blank"><span class="fab fa-facebook-square"></span></a></div>
+        <div class="social-button"><a
+                href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com"
+                target="_blank"><span class="far fa-envelope"></span></a></div>
+    </div>
+    <h4 id="footer-copyright">Copyright <span class="far fa-copyright"></span> 2021 All Rights Reserved</h4>
+</footer>
+</body>
 </html>

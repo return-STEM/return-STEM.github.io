@@ -1,0 +1,11 @@
+{
+  "code" : "wkshppygame",
+  "title": "Pygame Workshop",
+  "difficulty": "Moderate",
+  "length": "2.5 Hours",
+  "active": true,
+  "meta": {
+    "thumbnail": "assets/img/pygame.svg",
+    "signupLink": "pygame/signup.html"
+  }
+}
