@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1800"
+   height="1200"
+   viewBox="0 0 476.25005 317.5"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="web-preview.svg">
+  <defs
+     id="defs2">
+    <style
+       id="style833">.cls-1,.cls-10,.cls-2{fill:none;}.cls-1,.cls-2{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-1{stroke-width:1.08px;}.cls-2{stroke-width:1.44px;}.cls-3{fill:#6b9ac4;}.cls-4{fill:#507493;}.cls-5{fill:#c4d7e7;}.cls-6{fill:#939598;}.cls-7{fill:#58595b;}.cls-8{fill:#d1d3d4;}.cls-9{fill:#414042;}.cls-10{stroke:#414042;stroke-miterlimit:10;stroke-width:0.35px;}</style>
+    <style
+       id="style904">.cls-1,.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-1{stroke-width:1.08px;}.cls-2{stroke-width:1.44px;}.cls-3{fill:#6b9ac4;}.cls-4{fill:#507493;}.cls-5{fill:#c4d7e7;}</style>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0082453"
+     inkscape:cx="916.88805"
+     inkscape:cy="772.96222"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     width="1919px"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="2149"
+     inkscape:window-y="609"
+     inkscape:window-maximized="1"
+     inkscape:snap-page="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:4.72499;stop-color:#000000"
+       id="rect971"
+       width="476.25"
+       height="317.5"
+       x="0"
+       y="0" />
+    <g
+       id="g969"
+       transform="translate(3.3912658e-6,1.5469502)">
+      <g
+         id="g937"
+         transform="matrix(0.36504084,0,0,0.36504084,71.50656,71.098179)">
+        <g
+           id="Layer_2"
+           data-name="Layer 2"
+           transform="translate(199.00005,-68.690374)">
+          <polygon
+             class="cls-3"
+             points="52.46,101.29 0,192.19 131.21,267.99 183.79,177.09 "
+             id="polygon913" />
+          <polyline
+             class="cls-4"
+             points="473.45 84.41 342.24 8.61 336.46 5.66 330.33 3.42 323.96 1.65 317.36 0.47 310.41 0 303.33 0.12 295.91 0.82 288.48 2.12 280.82 4.13 273.04 6.72 265.25 9.79 257.36 13.56 249.34 17.8 78.75 116.36 78.75 116.39 183.79 177.07 183.79 207.37 380.67 93.61 388.92 89.24 397.18 85.35 405.31 82.17 413.33 79.58 421.23 77.69 429.01 76.39 436.55 75.8 443.98 75.92 451.05 76.63 457.89 78.04 464.37 80.17 470.5 82.88 473.41 84.38"
+             id="polyline915" />
+          <polygon
+             class="cls-5"
+             points="118.13,336.25 118.13,396.84 249.34,472.65 249.34,412.05 "
+             id="polygon917" />
+          <polygon
+             class="cls-5"
+             points="183.79,177.09 131.21,267.99 183.79,298.29 183.79,267.99 380.67,154.34 387.04,150.92 393.28,148.21 399.53,146.09 405.66,144.56 411.56,143.73 417.33,143.61 422.76,144.09 427.94,145.26 432.89,147.03 437.49,149.51 441.74,152.46 445.51,156.11 448.93,160.35 451.88,165.19 454.35,170.49 456.36,176.27 457.89,182.52 458.83,189.12 459.42,196.19 459.42,203.5 458.83,211.05 457.89,218.95 456.36,226.84 454.35,234.98 451.88,243.11 448.93,251.37 445.51,259.5 441.74,267.52 437.49,275.42 432.89,283.2 427.94,290.62 422.76,297.82 417.33,304.65 411.56,311.14 405.66,317.15 399.53,322.69 393.28,327.76 387.04,332.24 380.67,336.25 249.34,412.05 249.34,472.65 380.67,396.84 388.92,391.77 397.17,386.12 405.31,379.99 413.32,373.27 421.22,365.96 429,358.29 436.55,350.16 443.98,341.55 451.05,332.59 457.89,323.4 464.37,313.73 470.5,303.83 476.4,293.81 481.82,283.43 486.89,273.06 491.49,262.45 495.73,251.84 499.5,241.23 502.69,230.62 505.52,220.01 507.87,209.51 509.64,199.26 510.94,189 511.65,179.1 512,169.43 511.65,160.12 510.94,151.04 509.64,142.44 507.87,134.18 505.52,126.28 502.69,118.97 499.5,112.14 495.73,105.77 491.49,100 486.89,94.81 481.82,90.21 476.4,86.2 470.5,82.9 464.37,80.19 457.89,78.07 451.05,76.65 443.98,75.94 436.55,75.83 429,76.42 421.22,77.71 413.32,79.6 405.31,82.19 397.17,85.38 388.92,89.27 380.67,93.63 183.79,207.39 "
+             id="polygon919" />
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:38.1px;line-height:1.25;font-family:'Seven Segment';-inkscape-font-specification:'Seven Segment';stroke-width:0.264583"
+         x="103.30847"
+         y="262.28671"
+         id="text941"><tspan
+           sodipodi:role="line"
+           id="tspan939"
+           x="103.30847"
+           y="262.28671"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.1px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583">Return STEM;</tspan></text>
+    </g>
+  </g>
+</svg>
