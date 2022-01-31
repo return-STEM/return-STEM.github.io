@@ -1,0 +1,39 @@
+@import '../base/variables.scss';
+
+.container {
+    width: max-content;
+    
+    &_anim {
+        display: inline-block;
+
+        & button {
+            background-color: transparent;
+            border-style: solid;
+            border-color: $pink;
+            transition: 0.25s ease-in;
+            width: max-content;   
+            border-width: 0.1em;
+
+            &:disabled {
+                color: inherit;
+            }
+        }
+
+        &:hover {
+            & button {
+            background-color: $pink;
+            color: white;
+            cursor: pointer;
+            }
+
+            & button:disabled .container_anim_default { display: none; }
+            & button:disabled .container_anim_disabled {display: initial; }
+        }
+
+        &_default { }
+    
+        &_disabled {
+            display: none;
+        }
+    }
+}

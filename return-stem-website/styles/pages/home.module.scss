@@ -1,0 +1,176 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+/* Header */
+.header {
+    --header-font: 6vw;
+    display: flex;
+    font-size: 2em;
+    max-width: 90vw;
+    margin: 0 auto;
+
+    &_left {
+        font-size: 1em;
+        padding: 3em 0em 5em 0;
+
+        &_title_top {
+            font-family: "Inter Bold";
+            font-size: var(--header-font);
+            margin: 0;
+            animation: 0.75s ease-in 0s 1 fadeInOne;
+        }
+
+        &_title_bottom {
+            font-family: "Inter Medium";
+            font-size: calc(var(--header-font) * 8 / 9);
+            margin: 0;
+            animation: 1.5s ease-in 0s 1 fadeInTwo;
+        }
+
+        &_text {
+            font-family: "Quicksand Regular";
+            font-size: calc(var(--header-font) * 7 / 19);
+            padding: 1em 0 1em 0.25em;
+            margin: 0;
+            animation: 2.25s ease-in 0s 1 fadeInThree;
+        }  
+
+        &_button {
+            font-family: "Quicksand Regular";
+            font-size: calc(var(--header-font) * 1 / 3);
+            padding: 0.5em 0.75em;
+            animation: 2.25s ease-in 0s 1 fadeInThree;
+
+            &_cont {
+                margin-left: 0.25em; 
+            }
+        }
+    }
+
+    &_center {
+        flex-grow: 1;
+        flex-basis: 5vw;
+    }
+
+    &_right {
+
+        &_graphic {
+            width: 100%;
+        }
+    }
+}
+
+@keyframes fadeInOne {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTwo {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInThree {
+    0% {
+        opacity: 0;
+    }
+
+    67% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.why_us {
+    height: 50em;
+    width: 100%;
+    background-color: $blue;
+}
+
+@include breakpointMax(1800px) {
+    #page {
+        font-size: 1.1rem;
+    }
+
+    .header {
+        --header-font: 5em;
+        max-width: 1500px;
+
+        &_center {
+            flex-basis: 2em;
+        }
+    }
+}
+
+@include breakpoint(1300px, 1800px) {
+    #page {
+        font-size: 1rem;
+    }
+}
+
+@include breakpoint(600px, 1300px) {
+    #page {
+        font-size: 0.9rem;
+    }
+}
+
+@include breakpointMin(600px) {
+    #page {
+        font-size: 0.8rem;
+    }
+}
+
+@include breakpointMin(1100px) {
+    .header {
+        &_left {
+            padding: 2em 0em 4.5em 0em;
+        }
+    }
+}
+
+@include breakpointMin(850px) {
+    .header {
+        --header-font: 12vw;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &_left {
+            text-align: center;
+            padding: 1em 0em 4em 0em;
+
+            &_button_cont {
+                    margin: 0 auto;
+            }
+        }
+
+        &_center {
+            display: none;
+        }
+
+        &_right {
+            max-width: 80vw;
+        }
+    }
+}
+
+@include breakpointMin(450px) {
+    .header_left {
+        padding: 1em 0em 2em 0em;
+    }
+}
