@@ -471,6 +471,14 @@ a, a:hover, a:focus, a:active {
     overflow: auto;
 }
 
+#courses-cont:first-child {
+    margin-left: auto;
+}
+
+#courses-cont:last-child {
+    margin-right: auto;
+}
+
 .course {
     background-color: white;
     width: 17.5em;
@@ -478,14 +486,6 @@ a, a:hover, a:focus, a:active {
     transition: 0.1s ease-in-out;
     margin: 1.5em 2em;
     min-width: 17.5em;
-}
-
-#course-one {
-    margin-left: auto;
-}
-
-#course-two {
-    margin-right: auto;
 }
 
 .course:hover {
@@ -528,6 +528,11 @@ a, a:hover, a:focus, a:active {
 .course-bottom-icon {
     color: var(--pink);
     font-size: 1.1em;
+}
+
+.course-bottom-diff-icon {
+    height: 1.3em;
+    float: left;
 }
 
 .course-bottom-text {
@@ -639,6 +644,14 @@ a, a:hover, a:focus, a:active {
 }
 
 .popup-cont-left-two {
+    background-color: #dcd2e2;
+}
+
+.popup-cont-left-three {
+    background-color: #f2e798;
+}
+
+.popup-cont-left-four {
     background-color: #DAF6D7;
 }
 
