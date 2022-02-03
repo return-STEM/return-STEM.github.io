@@ -31,7 +31,6 @@ export default function Home({ data }) {
         <meta property="og:image" content="https://returnstem.org/index-og-preview.png" />
         <meta property="og:image:height" content="1200px" />
         <meta property="og:image:width" content="1800px" />
-        <title>Return STEM;</title>
         <link rel="shortcut icon" href="/img/Logo.svg" />
       </Head>
       {/* Header */}
