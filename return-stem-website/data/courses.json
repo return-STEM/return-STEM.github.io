@@ -2,11 +2,11 @@
   "courses": [
     {
       "href": "intropy",
-      "name": "Intro to Python"
+      "name": "Introduction to Python"
     },
     {
       "href": "introcpp",
-      "name": "Intro to C++"
+      "name": "Introduction to C++"
     },
     {
       "href": "applipy",
