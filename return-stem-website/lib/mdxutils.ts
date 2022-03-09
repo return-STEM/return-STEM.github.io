@@ -6,7 +6,9 @@ export function getHeadingTree(markdown: string) {
     let slugger = GithubSlugger()
     let lines: string[] = markdown.split(/\r?\n/)
     let headings: Heading[] = []
+    let isInsideCodeBlock = false;
     for (let l of lines) {
+
         let pref = ""
         if (l.startsWith("#")) {
             pref = "#"
@@ -15,7 +17,7 @@ export function getHeadingTree(markdown: string) {
                 pref += "#"
                 ind++
             }
-            if (l[ind] == " ") {
+            if (l[ind] == " " && !isInsideCodeBlock) {
                 let headingText = l.substring(ind + 1)
                 let slug = slugger.slug(headingText)
                 headings.push({
@@ -24,6 +26,9 @@ export function getHeadingTree(markdown: string) {
                     slug: slug
                 })
             }
+        }
+        else if (l.startsWith("```")) {
+            isInsideCodeBlock = !isInsideCodeBlock
         }
     }
     return headings
@@ -36,8 +41,6 @@ export async function getHeadingTreeMd(markdown: string){
     }
     return headings
 }
-
-
 
 type Heading = {
     level: number

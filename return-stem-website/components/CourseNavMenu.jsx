@@ -23,44 +23,50 @@ export default function CourseNavMenu(props) {
 
             </Link>
             <div style={{paddingTop: "20px"}}></div>
-            {
-                props.walkthroughData.lessons.map((lesson) => {
-                    return (
-                        <Link key={`${props.courseData.href}/${lesson.href}`}
-                              href={`/guide/${props.courseData.href}/${lesson.href}`}>
-                            {
-                                props.lessonData.href === lesson.href ?
-                                    <div>
-                                        <div className={styles["nav-lesson-active"]}>
+            <div className={styles["nav-lesson-list"]}>
+
+                <div>
+
+                {
+                    props.walkthroughData.lessons.map((lesson) => {
+                        return (
+                            <Link key={`${props.courseData.href}/${lesson.href}`}
+                                  href={`/guide/${props.courseData.href}/${lesson.href}`}>
+                                {
+                                    props.lessonData.href === lesson.href ?
+                                        <div>
+                                            <div className={styles["nav-lesson-active"]}>
+                                                {lesson.name}
+                                            </div>
+                                            <div className={styles["nav-lesson-header-list"]}>
+                                                {
+                                                    props.headings.map((heading) => {
+                                                            if (heading.level === 1) {
+                                                                return (
+
+                                                                    <Link key={heading.slug} href={`#${heading.slug}`}>
+                                                                        <div>
+                                                                            <MDXRemote {...heading.md}></MDXRemote>
+                                                                        </div>
+                                                                    </Link>
+                                                                )
+                                                            } else return ("")
+                                                        }
+                                                    )
+                                                }
+                                            </div>
+                                        </div> :
+                                        <div className={styles["nav-lesson"]}>
                                             {lesson.name}
                                         </div>
-                                        <div className={styles["nav-lesson-header-list"]}>
-                                            {
-                                                props.headings.map((heading) => {
-                                                        if (heading.level === 1) {
-                                                            return (
+                                }
 
-                                                                <Link key={heading.slug} href={`#${heading.slug}`}>
-                                                                    <div>
-                                                                        <MDXRemote {...heading.md}></MDXRemote>
-                                                                    </div>
-                                                                </Link>
-                                                            )
-                                                        } else return ("")
-                                                    }
-                                                )
-                                            }
-                                        </div>
-                                    </div> :
-                                    <div className={styles["nav-lesson"]}>
-                                        {lesson.name}
-                                    </div>
-                            }
-
-                        </Link>
-                    )
-                })
-            }
+                            </Link>
+                        )
+                    })
+                }
+                </div>
+            </div>
         </div>
     )
 }

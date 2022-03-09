@@ -1,4 +1,5 @@
 .vscode/
+return-stem-website/node_modules/
 jsconfig.json
 *~
 .idea/

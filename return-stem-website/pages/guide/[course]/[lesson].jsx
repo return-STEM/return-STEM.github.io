@@ -10,14 +10,20 @@ import {serialize} from "next-mdx-remote/serialize";
 import styles from "../../../styles/pages/guide.module.sass"
 import rehypeSlug from 'rehype-slug';
 import rehypePrism from '@mapbox/rehype-prism'
+import rehypeKatex from 'rehype-katex'
+import remarkMath from 'remark-math'
 import CourseNavMenu from "../../../components/CourseNavMenu";
 import { getHeadingTreeMd} from "../../../lib/mdxutils"
 
 const options = {
     mdxOptions: {
+        remarkPlugins: [
+            remarkMath
+        ],
         rehypePlugins: [
             rehypeSlug, // add IDs to any h1-h6 tag that doesn't have one, using a slug made from its text
-            rehypePrism
+            rehypePrism,
+            rehypeKatex
         ],
     },
 };
