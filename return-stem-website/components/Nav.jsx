@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import styles from '../styles/layout/nav.module.scss';
 import { useEffect } from 'react';
 import $ from 'jQuery';
@@ -47,19 +49,25 @@ export default function Nav() {
                     </div>
                 </label>
                 <div className={styles.nav_right_secondary}>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                     <a href="#about">About</a>
-                    <a href="#courses">Courses</a>
+                    <a href="/courses">Courses</a>
                     <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank">Contact</a>
                 </div>
                 <div className={styles.nav_right_link}>
-                    <a href="#">Home</a>
+                    <Link href="/">
+                        <a href="">Home</a>
+                    </Link>
                 </div>
                 <div className={styles.nav_right_link}>
-                    <a href="#about">About</a>
+                    <Link href="#about">
+                        <a href="">About</a>
+                    </Link>
                 </div>
                 <div className={styles.nav_right_link}>
-                    <a href="#courses">Courses</a>
+                    <Link href="/courses">
+                        <a href="">Courses</a>
+                    </Link>
                 </div>
                 <div className={styles.nav_right_link}>
                     <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank">Contact</a>

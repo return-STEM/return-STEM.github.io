@@ -34,7 +34,7 @@ html {
     font-size: 10px;
 }
 
-a, a:hover, a:focus, a:active {
+a, a:hover, a:focus, a:active, a:visited {
     text-decoration: none;
     color: inherit;
 }

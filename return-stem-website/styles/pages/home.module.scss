@@ -1,5 +1,6 @@
 @import '../base/variables.scss';
 @import '../base/mixins.scss';
+@import '../base/base.scss';
 
 /* Header */
 .header {
@@ -97,17 +98,82 @@
     }
 }
 
-.why_us {
-    height: 50em;
-    width: 100%;
+.about {
     background-color: $blue;
+    font-size: 3em;
+
+    &_title {
+        color: white;
+        font-family: "Inter Medium";
+        font-size: 2.5em;
+    }
+
+    &_text {
+        color: white;
+        font-family: "Quicksand Regular";
+        font-size: 1.125em;
+    }
+
+    &_why_1, &_why_2, &_why_3 {
+        text-align: center;
+    }
+
+    &_why_1 {
+        padding: 2em 3em;
+        padding-bottom: 0;
+        width: 32.5em;
+        margin: 0 auto;
+    }
+
+    &_why_2 {
+        display: flex;
+        margin-left: 2vw;
+
+        &_left {
+            margin: auto 0;
+            flex-basis: 45vw;
+        }
+
+        &_right {
+            flex-basis: 53vw;
+            position: relative;
+            height: 20em;
+        }
+
+        &_img {
+            width: 62.5%;
+            position: absolute;
+            box-shadow: 0.3em 0.3em 0.5em 0.35em rgba(0, 0, 0, 0.5);
+
+            &_1 {
+                top: 27.5%;
+                left: 5%;
+                z-index: 3;
+            }
+
+            &_2 {
+                bottom: 7.5%;
+                left: 17.5%;
+                z-index: 1;
+            }
+
+            &_3 {
+                top: 15%;
+                right: 5%;
+                z-index: 2;
+            }
+        }
+    }
+
+    &_why_3 {
+        padding: 2em 3em;
+        padding-top: 0;
+        width: 32.5em;
+        margin: 0 auto; 
+    }
 }
 
 @include breakpointMax(1800px) {
-    #page {
-        font-size: 1.1rem;
-    }
-
     .header {
         --header-font: 5em;
         max-width: 1500px;
@@ -118,28 +184,30 @@
     }
 }
 
-@include breakpoint(1300px, 1800px) {
-    #page {
-        font-size: 1rem;
-    }
-}
-
-@include breakpoint(600px, 1300px) {
-    #page {
-        font-size: 0.9rem;
-    }
-}
-
-@include breakpointMin(600px) {
-    #page {
-        font-size: 0.8rem;
-    }
-}
-
 @include breakpointMin(1100px) {
     .header {
         &_left {
             padding: 2em 0em 4.5em 0em;
+        }
+    }
+}
+
+@for $i from 0 through 3 {
+    @include breakpoint(calc(1350px - $i * 250px), calc(1600px - $i * 250px)) {
+        .about {
+            font-size: calc(2.75em - $i * 0.25em);
+        }
+    }
+}
+
+@include breakpoint(550px, 850px) {
+    .about {
+        font-size: 2.5em;
+
+        &_why_2 {
+            &_right {
+                height: 16em;
+            }
         }
     }
 }
@@ -165,6 +233,73 @@
 
         &_right {
             max-width: 80vw;
+        }
+    }
+
+    .about {
+        &_why_1 {
+            width: 80vw;
+            padding: 1.75em 0 0 0;
+        }
+
+        &_why_2 {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 0 2em 0;
+
+            &_left {
+                flex-basis: 80vw;
+            }
+
+            &_right {
+                flex-grow: 0;
+                flex-basis: 80vw;
+                margin-top: 1em;
+            }
+    
+            &_img {
+                width: 65%;
+            }
+
+            &_img_1 {
+                top: 17.5%;
+                left: 5%;
+            }
+
+            &_img_2 {
+                bottom: 7.5%;
+                left: 20%;
+            }
+
+            &_img_3 {
+                top: 2.5%;
+                right: 5%;
+            }
+        }
+
+        &_why_3 {
+            width: 80vw;
+            padding: 0 0 1.75em 0;
+
+            & h1 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@include breakpointMin(550px) {
+    .about {
+        font-size: 2em;
+
+        &_why_2 {
+            &_right {
+                height: 50vw;
+            }
+
+            &_img {
+                width: 65%;
+            }
         }
     }
 }

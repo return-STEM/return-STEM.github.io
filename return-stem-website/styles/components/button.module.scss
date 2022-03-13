@@ -16,6 +16,14 @@
 
             &:disabled {
                 color: inherit;
+
+                & .container_anim_default {
+                    display: none;
+                }
+
+                & .container_anim_disabled {
+                    display: initial;
+                }
             }
         }
 
@@ -25,12 +33,7 @@
             color: white;
             cursor: pointer;
             }
-
-            & button:disabled .container_anim_default { display: none; }
-            & button:disabled .container_anim_disabled {display: initial; }
         }
-
-        &_default { }
     
         &_disabled {
             display: none;
