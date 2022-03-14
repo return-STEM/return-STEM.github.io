@@ -17,7 +17,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 40%;
+        width: 50%;
     }
     
     &_title {
@@ -76,5 +76,60 @@
     &_cont {
         margin: 0 auto;
         max-width: 36em;
+    }
+}
+@include breakpoint(700px, 1150px) {
+    .header {
+        &_cont {
+            width: 60%;
+        }
+    }
+}
+
+@include breakpoint(400px, 700px) {
+    .header {
+        &_cont {
+            width: 75%;
+        }
+    }
+
+    .desc_cont {
+        max-width: 80%;
+    }
+}
+
+@for $i from 0 through 4 {
+    @include breakpoint(calc(1000px - $i * 150px), calc(1150px - $i * 150px)) {
+        .header {
+            font-size: calc(4.5em - $i * 0.25em);
+        }
+    
+        .desc {
+            font-size: calc(2.25em - $i * 0.15em);
+        }
+    
+        .lessons {
+            font-size: calc(0.9em - $i * 0.1em);
+        }  
+    }
+}
+
+@include breakpointMin(400px) {
+    .header {
+        font-size: 3em;
+        &_cont {
+            width: 80%;
+        }
+    }
+
+    .desc {
+        font-size: 1.75em;
+        &_cont {
+            max-width: 90%;
+        }
+    }
+
+    .lessons {
+        font-size: 0.5em;
     }
 }

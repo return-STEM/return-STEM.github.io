@@ -125,3 +125,12 @@
         border-bottom: 0.1em solid $gray; 
     }
 }
+
+@include breakpointMin(400px) {
+    .lesson {
+        width: 95%;
+        &_exp {
+            right: 0.75em;
+        }
+    }
+}

@@ -103,7 +103,16 @@ export default function Search({courses}) {
           return elem.item;
         });
       }
-      return newCourses;
+      if (newCourses.length > 0)
+        return newCourses.map(obj => {
+          return (
+            <Card key={obj.name} data={obj} />
+          )
+        });
+      else
+        return (
+          <h1 className={styles.course_none}>Couldn't find anything!</h1>
+        )
     }, [diff, lang, search, courses]);
 
     const searchChange = useCallback((event) => {
@@ -161,11 +170,7 @@ export default function Search({courses}) {
             </div>
         </div>
         <div className={styles.course_cont}>
-          {searchCourses().map(obj => {
-            return (
-              <Card key={obj.name} data={obj} />
-            )
-          })}
+          {searchCourses()}
         </div>
       </>
     )

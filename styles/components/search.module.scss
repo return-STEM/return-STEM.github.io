@@ -1,11 +1,13 @@
 @import '../base/variables.scss';
+@import '../base/mixins.scss';
+
 
 .search {
     background-color: white;
     padding: 1em;
     border-radius: 0.25em;
     display: flex;
-    gap: 2em;
+    justify-content: space-between;
     z-index: 2;
     position: relative;
     box-shadow: 0em 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.3);
@@ -19,6 +21,7 @@
         border: none;
         border-radius: 0.15em;
         display: flex;
+        flex-shrink: 1;
 
         &_icon {
             padding: 0.35em 0.6em;
@@ -83,9 +86,81 @@
     }
 }
 
-.course_cont {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4em;
-    margin-top: 2.5em;
+.course {
+    &_cont {
+        display: flex;
+        flex-wrap: wrap;
+        //justify-content: space-between;
+        column-gap: 4em;
+        row-gap: 1em;
+        margin-top: 2.5em;
+    }
+
+    &_none {
+        font-family: "Inter Medium";
+        font-size: 2em;
+    }
+}
+
+@include breakpoint(850px, 1150px) {
+    .search {
+        &_bar {
+            flex-basis: 60%;
+        }
+    }
+
+    .course_cont {
+        column-gap: calc((100% - 3 * 17.5em * 0.85) / 2);
+    }
+}
+
+@include breakpoint(850px, 1000px) {
+    .search {
+        font-size: 0.85em;
+    }
+
+    .course_cont {
+        column-gap: calc((100% - 3 * 17.5em * 0.7) / 2);
+    }
+}
+
+@for $i from 0 through 4 {
+    @include breakpoint(calc(800px - $i * 50px), calc(850px - $i * 50px)) {
+        .course_cont {
+            column-gap: calc(100% - 2 * 17.5em * (0.95 - #{$i} * 0.05));
+        }
+    }
+}
+
+@include breakpoint(550px, 600px) {
+    .course_cont {
+        column-gap: calc(100% - 2 * 17.5em * 0.8);
+    }
+}
+
+@include breakpointMin(850px) {
+    .search {
+        &_bar {
+            flex-grow: 1;
+        }
+
+        &_cat {
+            display: none;
+        }
+    }
+
+    .course_cont {
+        margin-top: 1.5em;
+    }
+}
+
+@include breakpointMin(550px) {
+    .search {
+        font-size: 0.9em;
+    }
+
+    .course_cont {
+        justify-content: center;
+        font-size: 0.9em;
+    }
 }
