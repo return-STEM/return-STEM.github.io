@@ -57,7 +57,7 @@ export default function Nav() {
                     <Link href="/">
                         <a href="" className={styles.nav_right_secondary_link}>Home</a>
                     </Link>
-                    <Link href="#about">
+                    <Link href="/#about">
                         <a href="" className={styles.nav_right_secondary_link}>About</a>
                     </Link>
                     <Link href="/courses">
@@ -71,7 +71,7 @@ export default function Nav() {
                     </Link>
                 </div>
                 <div className={styles.nav_right_link}>
-                    <Link href="#about">
+                    <Link href="/#about">
                         <a href="">About</a>
                     </Link>
                 </div>
