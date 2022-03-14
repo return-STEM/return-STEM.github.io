@@ -111,7 +111,7 @@ export default function Search({courses}) {
         });
       else
         return (
-          <h1 className={styles.course_none}>Couldn't find anything!</h1>
+          <h1 className={styles.course_none}>Couldn&apos;t find anything!</h1>
         )
     }, [diff, lang, search, courses]);
 
