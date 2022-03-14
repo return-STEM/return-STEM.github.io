@@ -73,7 +73,7 @@ export default function course({ courseData }) {
                   <p className={styles.desc_text} key={index}>{obj}</p>
                 )})
               }
-              <p className={styles.desc_text}>Rather than download software, students will use <a className={styles.desc_link} href="https://replit.com/" target="_blank">repl.it</a>, a free online browser IDE. We will show students how to set it up in the course, though directions are available <a className={styles.desc_link} href="https://docs.google.com/presentation/d/e/2PACX-1vRiHYjrehQA8LFc9oQQtVY_tDfUEsA7VUl2-kjnRuLFo5ctdItYJHUodKmylUHR-u96B-4JEgLjWRDX/pub?start=false&loop=false&delayms=60000#slide=id.p1" target="_blank">here</a>.</p>
+              <p className={styles.desc_text}>Rather than download software, students will use <a className={styles.desc_link} href="https://replit.com/" target="_blank" rel="noreferrer">repl.it</a>, a free online browser IDE. We will show students how to set it up in the course, though directions are available <a className={styles.desc_link} href="https://docs.google.com/presentation/d/e/2PACX-1vRiHYjrehQA8LFc9oQQtVY_tDfUEsA7VUl2-kjnRuLFo5ctdItYJHUodKmylUHR-u96B-4JEgLjWRDX/pub?start=false&loop=false&delayms=60000#slide=id.p1" target="_blank" rel="noreferrer">here</a>.</p>
             </div>
           </section>
           <section className={styles.lessons}>

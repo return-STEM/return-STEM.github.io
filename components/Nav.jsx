@@ -29,6 +29,11 @@ export default function Nav() {
                     }
                 }, 50);
             });
+
+            $("." + styles.nav_right_secondary_link).on("click", function() {
+                $("#" + styles.nav_right_button).prop("checked", false);
+                $("html").removeClass(styles.overflow_hidden);
+            });
         });
     });
 
@@ -49,10 +54,16 @@ export default function Nav() {
                     </div>
                 </label>
                 <div className={styles.nav_right_secondary}>
-                    <a href="/">Home</a>
-                    <a href="#about">About</a>
-                    <a href="/courses">Courses</a>
-                    <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank">Contact</a>
+                    <Link href="/">
+                        <a href="" className={styles.nav_right_secondary_link}>Home</a>
+                    </Link>
+                    <Link href="#about">
+                        <a href="" className={styles.nav_right_secondary_link}>About</a>
+                    </Link>
+                    <Link href="/courses">
+                        <a href="" className={styles.nav_right_secondary_link}>Courses</a>
+                    </Link>
+                    <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" className={styles.nav_right_secondary_link} target="_blank" rel="noreferrer">Contact</a>
                 </div>
                 <div className={styles.nav_right_link}>
                     <Link href="/">
@@ -70,7 +81,7 @@ export default function Nav() {
                     </Link>
                 </div>
                 <div className={styles.nav_right_link}>
-                    <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank">Contact</a>
+                    <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank" rel="noreferrer">Contact</a>
                 </div>
             </div>
         </nav>

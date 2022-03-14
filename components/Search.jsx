@@ -104,11 +104,11 @@ export default function Search({courses}) {
         });
       }
       return newCourses;
-    }, [diff, lang, search]);
+    }, [diff, lang, search, courses]);
 
     const searchChange = useCallback((event) => {
         setSearch(event.target.value);
-    }, [search]);
+    });
 
     return (
       <>

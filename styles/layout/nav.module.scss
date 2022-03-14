@@ -130,7 +130,7 @@
             animation: navSmallAppear 1s ease-out;
             animation-fill-mode: forwards;
 
-            & a {
+            & .nav_right_secondary_link {
                 color: white;
                 font-family: "Ubuntu Light";
                 font-size: 2.25em;

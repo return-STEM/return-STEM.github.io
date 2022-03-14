@@ -9,13 +9,13 @@ export default function Footer(props) {
     return (
         <footer className={styles.footer}>
             <div className={styles.footer_cont}>
-                <a href="https://www.instagram.com/returnstem/" target="_blank" className={styles.footer_button}>
+                <a href="https://www.instagram.com/returnstem/" target="_blank" rel="noreferrer" className={styles.footer_button}>
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100070855052861" target="_blank" className={styles.footer_button}>
+                <a href="https://www.facebook.com/profile.php?id=100070855052861" target="_blank" rel="noreferrer" className={styles.footer_button}>
                     <FontAwesomeIcon icon={faFacebookF} />
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank" className={styles.footer_button}>
+                <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=contact.returnstem@gmail.com" target="_blank" rel="noreferrer" className={styles.footer_button}>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </div>
