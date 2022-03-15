@@ -50,7 +50,7 @@ export default function course({ courseData }) {
           <section className={styles.header} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/thumbnails/${courseData.href}.svg")`}}>
               <div className={styles.header_cont}>
                 <h1 className={styles.header_title}>{courseData.name}</h1>
-                <Button containerStyle={styles.header_button_cont} buttonStyle={styles.header_button} disabled={false} href={""} disabledElem={<></>}>Sign Up Now</Button>
+                <Button containerStyle={styles.header_button_cont} buttonStyle={styles.header_button} disabled={false} href={courseData.signup} disabledElem={<></>}>Sign Up Now</Button>
               </div>
           </section>
           <section className={styles.desc}>

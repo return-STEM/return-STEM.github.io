@@ -7,7 +7,7 @@
       "language": "Python",
       "duration": "10 Weeks",
       "signup_disabled": false,
-      "signup": "",
+      "signup": "https://forms.gle/zCveAia3tLh8uLfGA",
       "tags": "",
       "lessons": [
         {
@@ -15,7 +15,7 @@
           "description": "In this lesson, students will be introduced to the Python programming language, and learn how computers run code. Students will be able to write a simple program in Python.",
           "short": "Introduction to programming and Python",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "3/15/22"
         },
         {
@@ -23,7 +23,7 @@
           "description": "Learn variables, a useful and important part of programming. You will learn how to define, manipulate, and use your variables. ",
           "short": "Learn how to use variables in Python",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "3/22/22"
         },
         {
@@ -31,7 +31,7 @@
           "description": "Learn how to use the console, a way to input and output information with Python. You learn how to manipulate strings, one of the most important data types in Python.",
           "short": "Learn how to use the console in Python",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "3/29/22"
         },
         {
@@ -39,7 +39,7 @@
           "description": "In this lesson, you will learn arithmetic operations. Arithmetic operations are used to do mathematical calculations and are used in almost every program. These can range from simple addition and subtraction to exponential calculations. We will look at how to perform such operations in Python, using functions and operators as needed.",
           "short": "Learn how to use basic operations in Python",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "4/05/22"
         },
         {
@@ -47,7 +47,7 @@
           "description": "In this lesson, we will learn how to implement conditionals in Python. Conditionals are one of the most important control structures you will learn, and will help make your programs more interactive. You will learn how to write if-statements, boolean expressions, and logic operators.",
           "short": "Learn about programming with branches",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "4/12/22"
         },
         {
@@ -55,7 +55,7 @@
           "description": "In this lesson, we will look at a second type of control structure: the loop. As you become more experienced in coding, you will see that most of your programs will include loops in some form. These can range from simple loops used for iterating through a range of numbers to complex nested loops used to work with complicated data. Throughout this lesson, you will learn about the numerous loop types that Python supports.",
           "short": "Learn about looping in Python",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "4/19/22"
         },
         {
@@ -63,7 +63,7 @@
           "description": "In this lesson, you will learn one of the most powerful and commonly used data types in Python, the list. Lists are used to store collections of data. You will learn how to define and manipulate lists.",
           "short": "Learn about lists in Python",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "4/26/22"
         },
         {
@@ -71,7 +71,7 @@
           "description": "You have learned many functions in past lessons. Now, you will learn how to write your own functions. In programming, functions are blocks of reusable code that are used to perform a certain as coded by a user.",
           "short": "Learn how to write your own functions in Python",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "5/17/22"
         },
         {
@@ -108,7 +108,7 @@
       "language": "C++",
       "duration": "11 Weeks",
       "signup_disabled": false,
-      "signup": "",
+      "signup": "https://forms.gle/oRPUgTsXvTuft4yK6",
       "tags": "",
       "lessons": [
         {
@@ -217,7 +217,7 @@
       "language": "Python",
       "duration": "8 Weeks",
       "signup_disabled": false,
-      "signup": "",
+      "signup": "https://forms.gle/vNX7LL3yK3uQaDjx5",
       "tags": "",
       "lessons": [
         {
@@ -225,7 +225,7 @@
           "description": "You will review basic concepts that are covered in an introductory course, to refresh your memory or to fill in gaps in your knowledge. You will use the concepts covered in this review in this course. ",
           "short": "Review of introductory Python concepts",
           "href": "",
-          "unavailable": [true, true, true],
+          "unavailable": [true, false, true],
           "date": "3/16/22"
         },
         {

@@ -41,7 +41,7 @@ export default function Home({ data }) {
           <h1 className={styles.header_left_title_top}>Programming</h1>
           <h2 className={styles.header_left_title_bottom}>Taught <em>Right</em></h2>
           <p className={styles.header_left_text}>Free virtual programming classes for <br />grades 5-12</p>  
-          <Button containerStyle={styles.header_left_button_cont} buttonStyle={styles.header_left_button} disabled={false} href={data.header.signup_link} disabledElem={<>Returning Soon <FontAwesomeIcon icon={faClock}/></>}>Sign Up Now &rarr;</Button>
+          <Button containerStyle={styles.header_left_button_cont} buttonStyle={styles.header_left_button} disabled={data.header.signup_disabled} href={data.header.signup_link} disabledElem={<>Returning Soon <FontAwesomeIcon icon={faClock}/></>}>Sign Up Now &rarr;</Button>
         </div>
         <div className={styles.header_center}></div>
         <div className={styles.header_right}>
