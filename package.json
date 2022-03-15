@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build ",
-    "export": "next export -o docs/",
+    "export": "next export -o docs/ && copy \"CNAME\" \"docs/CNAME\" && copy \"nul\" \"docs/.nojekyll\"",
     "start": "next start",
     "lint": "next lint"
   },
