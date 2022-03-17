@@ -16,7 +16,7 @@
           "short": "Introduction to programming and Python",
           "href": "introduction",
           "unavailable": [true, false, true],
-          "date": "3/15/22"
+          "date": "3/16/22"
         },
         {
           "title": "Variables",
@@ -24,7 +24,7 @@
           "short": "Learn how to use variables in Python",
           "href": "variables",
           "unavailable": [true, false, true],
-          "date": "3/22/22"
+          "date": "3/23/22"
         },
         {
           "title": "Console I/O and String Manipulation",
@@ -32,7 +32,7 @@
           "short": "Learn how to use the console in Python",
           "href": "consoleio",
           "unavailable": [true, false, true],
-          "date": "3/29/22"
+          "date": "3/30/22"
         },
         {
           "title": "Basic Operations",
@@ -40,7 +40,7 @@
           "short": "Learn how to use basic operations in Python",
           "href": "arithmetic",
           "unavailable": [true, false, true],
-          "date": "4/05/22"
+          "date": "4/06/22"
         },
         {
           "title": "Conditionals (If/Else)",
@@ -48,7 +48,7 @@
           "short": "Learn about programming with branches",
           "href": "conditionals",
           "unavailable": [true, false, true],
-          "date": "4/12/22"
+          "date": "4/13/22"
         },
         {
           "title": "Control Structures (Loops)",
@@ -56,7 +56,7 @@
           "short": "Learn about looping in Python",
           "href": "loops",
           "unavailable": [true, false, true],
-          "date": "4/19/22"
+          "date": "4/20/22"
         },
         {
           "title": "Lists",
@@ -64,7 +64,7 @@
           "short": "Learn about lists in Python",
           "href": "lists",
           "unavailable": [true, false, true],
-          "date": "4/26/22"
+          "date": "4/27/22"
         },
         {
           "title": "Functions",
@@ -72,7 +72,7 @@
           "short": "Learn how to write your own functions in Python",
           "href": "functions",
           "unavailable": [true, false, true],
-          "date": "5/17/22"
+          "date": "5/18/22"
         },
         {
           "title": "Debugging",
@@ -80,7 +80,7 @@
           "short": "Learn how to debug the code you write",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "5/24/22"
+          "date": "5/25/22"
         },
         {
           "title": "Problem Solving",
@@ -88,7 +88,7 @@
           "short": "Learn how to solve problems with the knowledge you have",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "5/31/22"
+          "date": "6/01/22"
         }
       ],
       "hook": "Learn one the most popular programming languages",
@@ -226,7 +226,7 @@
           "short": "Review of introductory Python concepts",
           "href": "review",
           "unavailable": [true, false, true],
-          "date": "3/16/22"
+          "date": "3/17/22"
         },
         {
           "title": "Object-oriented Programming",
@@ -234,7 +234,7 @@
           "short": "Introduction to object-oriented programming",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "3/23/22"
+          "date": "3/24/22"
         },
         {
           "title": "Defining a Class",
@@ -242,7 +242,7 @@
           "short": "Learn how to write your own classes",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "3/30/22"
+          "date": "3/31/22"
         },
         {
           "title": "Inheritance and Polymorphism",
@@ -250,7 +250,7 @@
           "short": "Learn how to implement inheritance and polymorphism",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "4/06/22"
+          "date": "4/07/22"
         },
         {
           "title": "Algorithmic Thinking",
@@ -258,7 +258,7 @@
           "short": "Learn the process of algorithmic thinking and improve your problem solving skills",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "4/13/22"
+          "date": "4/14/22"
         },
         {
           "title": "Problem Day",
@@ -266,7 +266,7 @@
           "short": "Practice the skills you have learned",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "4/20/22"
+          "date": "4/21/22"
         },
         {
           "title": "Linked Lists and other data structures",
@@ -274,7 +274,7 @@
           "short": "Learn how to use different data structures and the benefits of using them",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "4/27/22"
+          "date": "4/28/22"
         },
         {
           "title": "Function-function interactions",
@@ -282,7 +282,7 @@
           "short": "Advance your knowledge of functions in python and how to expand their uses",
           "href": "",
           "unavailable": [true, true, true],
-          "date": "5/18/22"
+          "date": "5/19/22"
         }
       ],
       "hook": "Learn how to create data structures and algorithms in Python with ease",
