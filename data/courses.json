@@ -124,7 +124,7 @@
           "description": "In this lesson, we will look at variables, a useful and integral part of the of programs. We will learn how to define and use our own variables, and how we can manipulate the values stored within them. We will also learn how C++ handles variables of different data types.",
           "short": "Explore how C++ stores information",
           "href": "variables",
-          "unavailable": [true, true, true],
+          "unavailable": [false, false, false],
           "date": "3/21/22"
         },
         {
