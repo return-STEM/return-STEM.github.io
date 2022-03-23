@@ -1,0 +1,32 @@
+[
+  {
+    "href": "intropy",
+    "name": "Introduction to Python",
+    "difficulty": "Beginner",
+    "language": "Python",
+    "duration": "10 Weeks",
+    "signup_disabled": false,
+    "signup": "https://forms.gle/zCveAia3tLh8uLfGA",
+    "tags": ""
+  },
+  {
+    "href": "introcpp",
+    "name": "Introduction to C++",
+    "difficulty": "Beginner",
+    "language": "C++",
+    "duration": "11 Weeks",
+    "signup_disabled": false,
+    "signup": "https://forms.gle/oRPUgTsXvTuft4yK6",
+    "tags": ""
+  },
+  {
+    "href": "applipy",
+    "name": "Applications of Python",
+    "difficulty": "Moderate",
+    "language": "Python",
+    "duration": "8 Weeks",
+    "signup_disabled": false,
+    "signup": "https://forms.gle/vNX7LL3yK3uQaDjx5",
+    "tags": ""
+  }
+]

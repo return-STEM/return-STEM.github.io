@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Nav from '../components/Nav'
-import Button from '../components/Button'
-import Footer from '../components/Footer'
+import Nav from '../components/layout/Nav'
+import Button from '../components/common/Button'
+import Footer from '../components/layout/Footer'
 import styles from '../styles/pages/home.module.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,7 +11,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 export async function getStaticProps() {
-  const dir = path.join(process.cwd(), 'data/index.json');
+  const dir = path.join(process.cwd(), 'data/pages/home.json');
   const data = JSON.parse(await fs.readFile(dir, 'utf8'));
   return {
     props: { data }
@@ -45,7 +45,7 @@ export default function Home({ data }) {
         </div>
         <div className={styles.header_center}></div>
         <div className={styles.header_right}>
-          <img src="/img/header-image.png" className={styles.header_right_graphic} alt="programming STEM graphic" />
+          <img src="/img/pages/home/header-image.png" className={styles.header_right_graphic} alt="programming STEM graphic" />
         </div>
       </header>
       {/* About */}
@@ -60,9 +60,9 @@ export default function Home({ data }) {
             <p className={styles.about_text}>Our courses are all carefully created by our mentors. They include essential information, tips, programming examples, and common questions along with their answers.</p>
           </div>
           <div className={styles.about_why_2_right}>
-            <img src="/img/slideCollageOne.png" alt="" className={[styles.about_why_2_img, styles.about_why_2_img_1].join(' ')} />
-            <img src="/img/slideCollageTwo.png" alt="" className={[styles.about_why_2_img, styles.about_why_2_img_2].join(' ')} />
-            <img src="/img/slideCollageThree.png" alt="" className={[styles.about_why_2_img, styles.about_why_2_img_3].join(' ')} />
+            <img src="/img/pages/home/slideCollageOne.png" alt="" className={[styles.about_why_2_img, styles.about_why_2_img_1].join(' ')} />
+            <img src="/img/pages/home/slideCollageTwo.png" alt="" className={[styles.about_why_2_img, styles.about_why_2_img_2].join(' ')} />
+            <img src="/img/pages/home/slideCollageThree.png" alt="" className={[styles.about_why_2_img, styles.about_why_2_img_3].join(' ')} />
           </div>
         </div>
         <div className={styles.about_why_3}>

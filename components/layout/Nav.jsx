@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import styles from '../styles/layout/nav.module.scss';
+import styles from '../../styles/layout/nav.module.scss';
 import { useEffect } from 'react';
 import $ from 'jQuery';
 
@@ -40,7 +40,7 @@ export default function Nav() {
     return (
         <nav className={styles.nav}>
             <div className={styles.nav_left}>
-                <img src="/img/Logo.svg" className={styles.nav_left_logo} alt="logo"/>
+                <img src="/img/common/Logo.svg" className={styles.nav_left_logo} alt="logo"/>
                 <h1 className={styles.nav_left_text}>Return STEM;</h1>
             </div>
             <div className={styles.nav_center}></div>

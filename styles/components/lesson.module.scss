@@ -20,7 +20,7 @@
         font-size: 1.25em;
         background-color: white;
         left: calc(-0.35em / 2);
-        top: 1.2em;
+        top: 1.05em;
         transform: translateX(-50%);
         text-align: center;
         & p {
@@ -30,7 +30,7 @@
 
     &_exp {
         position: absolute;
-        top: 1.2em;
+        top: 1.05em;
         right: 0.5em;
         font-size: 1.5em;
         transition: 0.15s ease-in;
@@ -46,7 +46,7 @@
         }
 
         &_bar {
-            width: 1.1em;
+            width: 1em;
             background-color: black;
             height: 0.15em;
             display: block;
@@ -69,7 +69,7 @@
 
     &_title {
         font-family: "Inter Regular";
-        font-size: 1.75em;
+        font-size: 1.6em;
         margin: 0;
         padding: 0.67em 0em 0.07em 0em;
         width: fit-content;

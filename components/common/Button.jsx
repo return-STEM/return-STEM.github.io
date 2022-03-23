@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import $ from 'jQuery';
 
-import styles from '../styles/components/button.module.scss';
+import styles from '../../styles/components/button.module.scss';
 
 export default function Button({containerStyle, href, disabled, buttonStyle, children, disabledElem}) {
     /*

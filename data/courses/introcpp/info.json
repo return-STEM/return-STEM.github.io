@@ -1,0 +1,14 @@
+{
+  "name": "Introduction to C++",
+  "hook": "Learn one of the world's most powerful programming languages",
+  "desc": [
+    "Begin your journey into the world of C++, a popular and powerful languages used for various applications including game development, virtual reality, and robotics. C++ allows students to learn and understand the intricacies of the computer while still controlling it all from a high level environment. The course explores everything needed for students to build their own console applications and more.",
+    "The class will meet once weekly on Mondays. See each lesson below for information on particular dates. These sessions will give students the instruction and time to create C++ programs."
+  ],
+  "prerequisites": [
+    "Students will need a discord account as we will be communicating most of our important information through the platform. Our lessons will take place on discord.",
+    "Students will need internet access during our course because our lessons will be live. If they wish to verbally ask questions, they will need a working mic, though it is not a requirement since they can still type their questions."
+  ],
+  "signup_disabled": false,
+  "signup": "https://forms.gle/oRPUgTsXvTuft4yK6"
+}
