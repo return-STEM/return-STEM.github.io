@@ -1,0 +1,112 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.card {
+    background-color: white;
+    width: 17.5em;
+    overflow: hidden;
+    transition: 0.1s ease-in-out;
+    margin: 1.5em 0em;
+    min-width: 17.5em;
+    border-radius: 0.25em;
+    align-self: flex-start;
+
+    &:hover {
+        transform: scale(110%);
+        box-shadow: 0em 0em 1em 0.6em rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    &_img {
+        height: 12.5em;  
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &_title {
+        font-family: "Inter Regular";
+        font-size: 1.75em;
+        padding: 0 0.5em;
+        text-align: center;
+        margin: 0.5em 0 0.2em 0;
+    }
+
+    &_bottom {
+        display: flex;
+
+        &_half {
+            width: 8.75em;
+
+            &_left {
+                padding-left: 0.75em;
+                text-align: left;
+                @extend .card_bottom_half;
+            }
+
+            &_right {
+                padding-right: 0.75em;
+                text-align: right;
+                @extend .card_bottom_half;
+            }
+        }
+
+        &_icon {
+            color: $pink;
+            font-size: 1.1em;
+        }
+
+        &_diff {
+            height: 1.3em;
+            float: left;
+        }
+
+        &_text {
+            font-family: "Quicksand Regular";
+            font-size: 1.25em;
+        }
+
+        &_button {
+            font-family: "Quicksand Regular";
+            font-size: 1.25em;
+            padding: 0.4em 0.7em;
+
+            &_cont {
+                padding: 1em;
+                padding-top: 0.25em;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@include breakpoint(1000px, 1150px) {
+    .card {
+        font-size: 0.85em;
+    }
+}
+
+@include breakpoint(850px, 1000px) {
+    .card {
+        font-size: 0.7em;
+    }
+}
+
+@for $i from 0 through 4 {
+    @include breakpoint(calc(800px - $i * 50px), calc(850px - $i * 50px)) {
+        .card {
+            font-size: calc(0.95em - $i * 0.05em);
+        }
+    }
+}
+
+@include breakpoint(550px, 600px) {
+    .card {
+        font-size: 0.8em;
+    }
+}
+
+@include breakpointMin(550px) {
+    .card {
+        justify-self: center;
+    }
+}

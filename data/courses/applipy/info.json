@@ -1,0 +1,14 @@
+{
+  "name": "Applications of Python",
+  "hook": "Learn how to create data structures and algorithms in Python with ease",
+  "desc": [
+    "After learning the basics of Python, students can take this intermediate level course to enrich and develop their programming skills. This course traverses a wide range of topics, focusing particularly on creating data structures and algorithms with the object oriented programming paradigm. Students will also learn key libraries and modules in python to create applications of increasing complexity.",
+    "The class will meet once weekly on Thursdays. See each lesson below for information on particular dates. These sessions will include time for students to solve programming problems and learn essential programming skills."
+  ],
+  "prerequisites": [
+    "Students who take this course should have taken an Introductory course in Python or similar. It is also recommended that they have taken at least an algebra level math course.",
+    "Students will need internet access during our course because our lessons will be live. If they wish to verbally ask questions, they will need a working mic, though it is not a requirement since they can still type their questions."
+  ],
+  "signup_disabled": false,
+  "signup": "https://forms.gle/vNX7LL3yK3uQaDjx5"
+}

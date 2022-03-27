@@ -1,0 +1,136 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+@import '../base/base.scss';
+
+.lesson {
+    font-size: 2.5em;
+    position: relative;
+    border-left: 0.35em solid $pink;
+    padding: 0.5em 0em 0.5em 3em;
+    width: 38em;
+    margin: 0 auto;
+
+    &_circ {
+        position: absolute;
+        font-family: "Quicksand Regular";
+        border: 0.2em solid $pink;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        font-size: 1.25em;
+        background-color: white;
+        left: calc(-0.35em / 2);
+        top: 1.05em;
+        transform: translateX(-50%);
+        text-align: center;
+        & p {
+            transform: translateY(-72.5%);
+        }
+    }
+
+    &_exp {
+        position: absolute;
+        top: 1.05em;
+        right: 0.5em;
+        font-size: 1.5em;
+        transition: 0.15s ease-in;
+        height: 1.1em;
+        width: 1.1em;
+        transform-origin: 50% 50%;
+
+        &:hover {
+            cursor: pointer;
+            & .lesson_exp_bar {
+                background-color: $pink;
+            }
+        }
+
+        &_bar {
+            width: 1em;
+            background-color: black;
+            height: 0.15em;
+            display: block;
+            border-radius: 0.2em;
+            transition: 0.15s ease-in;
+        }
+
+        &_one {
+            margin-top: 0.45em;
+        }
+
+        &_two {
+            transform: rotate(90deg) translateX(-0.15em);
+        }
+    }
+
+    &_wide {
+        width: 90%;
+    }
+
+    &_title {
+        font-family: "Inter Regular";
+        font-size: 1.6em;
+        margin: 0;
+        padding: 0.67em 0em 0.07em 0em;
+        width: fit-content;
+        user-select: none;
+
+        @include link-animation($pink);
+    }
+
+    &_short {
+        font-family: "Quicksand Regular";
+        font-size: 1.25em;
+        color: rgba(50, 50, 50, 0.7);
+        margin-top: 0.18em;
+        padding-left: 0.05em;
+    }
+
+    &_drop {
+        display: none;
+
+        &_text {
+            font-family: "Quicksand Regular";
+            margin-top: 0;
+            padding: {
+                top: 1em;
+                left: 0.05em;
+            }
+            
+        }
+
+        &_dir {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1.5em;
+
+            &_btn {
+                font-family: "Quicksand Regular";
+                padding: 0.3em 0.7em;
+                font-size: 1.15em;
+
+                &_cont {
+                    padding: 0;
+                }
+            }
+        }
+
+        &_date {
+            font-family: "Quicksand Regular";
+            font-size: 1.2em;
+        }
+    }
+
+    &_div {
+        border-bottom: 0.1em solid $gray; 
+    }
+}
+
+@include breakpointMin(400px) {
+    .lesson {
+        width: 95%;
+        &_exp {
+            right: 0.75em;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Introduction to Python",
+  "hook": "Learn one the most popular programming languages",
+  "desc": [
+    "Our Introduction to Python course is designed to help teach students who are new to programming with one of the most popular languages. Python can be used for virtually anything and is well supported. Our course guides students through understanding how to program without any of the hassle that comes with figuring it out on our own.",
+    "The class will meet once weekly on Wednesdays. See each lesson below for information on particular dates. These sessions will include information, discussion, and time for students to create their own programs based on what they want."
+  ],
+  "prerequisites": [
+    "Students will need a discord account as we will be communicating most of our important information through the platform. Our lessons will take place on discord.",
+    "Students will need internet access during our course because our lessons will be live. If they wish to verbally ask questions, they will need a working mic, though it is not a requirement since they can still type their questions."
+  ],
+  "signup_disabled": false,
+  "signup": "https://forms.gle/zCveAia3tLh8uLfGA"
+}

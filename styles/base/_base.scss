@@ -1,0 +1,30 @@
+@include breakpointMax(1800px)
+{
+    #page {
+        font-size: 1.1rem;
+    }
+}
+
+@include breakpoint(1300px, 1800px) {
+    #page {
+        font-size: 1rem;
+    }
+}
+
+@include breakpoint(600px, 1300px) {
+    #page {
+        font-size: 0.9rem;
+    }
+}
+
+@include breakpoint(450px, 600px) {
+    #page {
+        font-size: 0.8rem;
+    }
+}
+
+@include breakpointMin(450px) {
+    #page {
+        font-size: 0.7rem;
+    }
+}

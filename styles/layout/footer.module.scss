@@ -1,0 +1,51 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.footer {
+    background-color: $navy;
+    font-size: 2em;
+    padding: 4em 2em;
+    color: white;
+    
+    &_cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    &_button {
+        border-radius: 50%;
+        padding: 0.25em;
+        font-size: 2.25em;
+        height: 1em;
+        width: 1em;
+        background-color: transparent;
+        border: solid white 0.1em;
+        color: white;
+        margin: 0 0.75em;
+        transition: 0.2s ease-in;
+        text-align: center;
+
+        &:hover, &:active {
+            background-color: white;
+            color: $navy;
+        }
+    }
+
+    &_text {
+        color: white;
+        font-size: 1.25em;
+        text-align: center;
+        margin-top: 1em;
+        font-family: "Quicksand Regular";
+    }
+}
+
+@include breakpointMin(450px) {
+    .footer {
+        font-size: 1.75em;
+
+        &_button {
+            margin: 0 0.6em;
+        }
+    }
+}

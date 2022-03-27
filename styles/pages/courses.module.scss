@@ -1,0 +1,41 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+@import '../base/base.scss';
+
+.header {
+   font-size: 1em; 
+}
+
+.course {
+    font-size: 2em;
+    padding: 2em 0em;
+    background-color: $gray;
+
+    &_wide {
+        width: 60.5em;
+        margin: 0 auto;
+    }
+
+    &_header {
+        font-family: "Inter Medium";
+        font-size: 4em;
+    }
+}
+
+@include breakpointMin(1150px) {
+    .course_wide {
+        width: 85%;
+    }
+}
+
+@include breakpoint(550px, 850px) {
+    .course_header {
+        font-size: 3em;
+    }
+}
+
+@include breakpointMin(550px) {
+    .course_header {
+        font-size: 2.5em;
+    }
+}
