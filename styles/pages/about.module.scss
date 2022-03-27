@@ -1,0 +1,23 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+@import '../base/base.scss';
+
+.header {
+   font-size: 1em; 
+}
+
+.about {
+    font-size: 2em;
+    padding: 2em 0;
+    background-color: $gray;
+
+    &-wide {
+        width: 60.5em;
+        margin: 0 auto;
+    }
+
+    &-header {
+        font-family: "Inter Medium", sans-serif;
+        font-size: 4em;
+    }
+}

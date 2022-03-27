@@ -48,7 +48,7 @@ export default function Home({ data }) {
           <img src="/img/pages/home/header-image.png" className={styles.header_right_graphic} alt="programming STEM graphic" />
         </div>
       </header>
-      {/* About */}
+      {/* about */}
       <section className={styles.about} id="about">
         <div className={styles.about_why_1}>
           <h1 className={styles.about_title}>Why Us?</h1>
