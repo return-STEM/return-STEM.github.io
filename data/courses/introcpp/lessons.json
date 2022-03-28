@@ -19,7 +19,7 @@
     "title": "Console I/O",
     "description": "Sometimes, we may want to input information from the console a certain way or need a way to output information in a certain format. This lesson will go over all the intricacies of taking input and output from the console using C++.",
     "short": "Understand the C++ console input and output",
-    "href": "",
+    "href": "consoleio",
     "unavailable": [false, false, false],
     "date": "3/28/22"
   },
