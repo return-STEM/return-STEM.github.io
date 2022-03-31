@@ -4,7 +4,7 @@
     "description": "In this lesson, students will be introduced to the Python programming language, and learn how computers run code. Students will be able to write a simple program in Python.",
     "short": "Introduction to programming and Python",
     "href": "introduction",
-    "unavailable": [true, false, true],
+    "unavailable": [false, false, false],
     "date": "3/16/22"
   },
   {
@@ -12,7 +12,7 @@
     "description": "Learn variables, a useful and important part of programming. You will learn how to define, manipulate, and use your variables. ",
     "short": "Learn how to use variables in Python",
     "href": "variables",
-    "unavailable": [true, false, true],
+    "unavailable": [false, false, false],
     "date": "3/23/22"
   },
   {
@@ -20,7 +20,7 @@
     "description": "Learn how to use the console, a way to input and output information with Python. You learn how to manipulate strings, one of the most important data types in Python.",
     "short": "Learn how to use the console in Python",
     "href": "consoleio",
-    "unavailable": [true, false, true],
+    "unavailable": [false, false, false],
     "date": "3/30/22"
   },
   {
