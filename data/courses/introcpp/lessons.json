@@ -28,7 +28,7 @@
     "description": "In this lesson, we will look at arithmetic operations. Arithmetic operations are used to do mathematical calculations and are used in almost every program. These can range from simple addition and subtraction to exponential calculations. We will look at how to perform such operations in C++, using functions and operators as needed.",
     "short": "Learn how to use arithmetic operations in C++",
     "href": "",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, false],
     "date": "4/04/22"
   },
   {
