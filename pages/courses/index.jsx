@@ -31,7 +31,7 @@ export default function Courses({ courses }) {
           name="keywords"
           content="Python, Free, Learning, Online, Virtual, Programming, C++, OOP, Computer Science"
         />
-        <link rel="shortcut icon" href="/img/Logo.svg" />
+        <link rel="shortcut icon" href="/img/common/Logo.svg" />
       </Head>
       <Nav></Nav>
       <section className={styles.header}></section>

@@ -4,7 +4,7 @@
     "description": "You will review basic concepts that are covered in an introductory course, to refresh your memory or to fill in gaps in your knowledge. You will use the concepts covered in this review in this course. ",
     "short": "Review of introductory Python concepts",
     "href": "review",
-    "unavailable": [true, false, true],
+    "unavailable": [false, false, true],
     "date": "3/17/22"
   },
   {
@@ -12,7 +12,7 @@
     "description": "This lesson covers the basic idea and principles of object-oriented programming. You will learn concepts related to object-oriented programming, such as encapsulation, inheritance, abstraction, and polymorphism.",
     "short": "Introduction to object-oriented programming",
     "href": "",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, true],
     "date": "3/24/22"
   },
   {
@@ -20,7 +20,7 @@
     "description": "In this lesson, you will learn how to implement and write classes. You will be able to represent objects in the real world with classes and implement them with attributes and methods.",
     "short": "Learn how to write your own classes",
     "href": "",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, true],
     "date": "3/31/22"
   },
   {
