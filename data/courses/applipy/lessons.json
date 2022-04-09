@@ -11,7 +11,7 @@
     "title": "Object-oriented Programming",
     "description": "This lesson covers the basic idea and principles of object-oriented programming. You will learn concepts related to object-oriented programming, such as encapsulation, inheritance, abstraction, and polymorphism.",
     "short": "Introduction to object-oriented programming",
-    "href": "",
+    "href": "object-oriented",
     "unavailable": [false, false, true],
     "date": "3/24/22"
   },
@@ -19,7 +19,7 @@
     "title": "Defining a Class",
     "description": "In this lesson, you will learn how to implement and write classes. You will be able to represent objects in the real world with classes and implement them with attributes and methods.",
     "short": "Learn how to write your own classes",
-    "href": "",
+    "href": "defining-class",
     "unavailable": [false, false, true],
     "date": "3/31/22"
   },
@@ -27,8 +27,8 @@
     "title": "Inheritance and Polymorphism",
     "description": "In this lesson, you will learn inheritance and polymorphism, and how they are implemented in the classes you will write. You learn how to use them to improve the code that you write.",
     "short": "Learn how to implement inheritance and polymorphism",
-    "href": "",
-    "unavailable": [true, true, true],
+    "href": "inheritance-and-polymorphism",
+    "unavailable": [false, false, true],
     "date": "4/07/22"
   },
   {
