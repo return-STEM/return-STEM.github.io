@@ -36,7 +36,7 @@
     "description": "In this lesson, we will learn how to implement conditionals in C++. Conditionals are one of the most important control structures you will learn, and will help make your programs more interactive. You will learn how to write if-statements, switch statements, boolean expressions, and logical operators.",
     "short": "Incorporate decision making to programs",
     "href": "",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, false],
     "date": "4/11/22"
   },
   {
