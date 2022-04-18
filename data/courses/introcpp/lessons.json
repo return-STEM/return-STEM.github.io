@@ -44,7 +44,7 @@
     "description": "In this lesson, we will look at a second type of control structure: the loop. As you become more experienced in coding, you will see that most of your programs will include repeated code. Loops allow for a way to reuse the same block of code in different ways. We will also learn how you can nest loops to create more complex programs. Throughout this lesson, you will learn about the numerous loop types that C++ supports.",
     "short": "Learn to write less code and do more with loops",
     "href": "loops",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, false],
     "date": "4/18/22"
   },
   {
