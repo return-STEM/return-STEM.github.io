@@ -52,7 +52,7 @@
     "description": "In this lesson, you will learn how to use arrays. You learn how to define and manipulate them, along with related libraries. Arrays are used to represent a collection of the same data type that belong together. By the end of the lesson, you will understand the uses and limitations of arrays in C++",
     "short": "Arrays let you store more data in one variable",
     "href": "arrays",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, false],
     "date": "4/25/22"
   },
   {
