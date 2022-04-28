@@ -36,7 +36,7 @@
     "description": "In this lesson, you will learn the implementation of common algorithms such as binary search. You will learn the process of developing an algorithm and Big O notation. ",
     "short": "Learn the process of algorithmic thinking and improve your problem solving skills",
     "href": "",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, true],
     "date": "4/14/22"
   },
   {
@@ -44,7 +44,7 @@
     "description": "Students will use the knowledge they have learned to solve short problems with mentor guidance, to clear up confusions and strengthen up their knowledge.",
     "short": "Practice the skills you have learned",
     "href": "",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, true],
     "date": "4/21/22"
   },
   {
@@ -52,7 +52,7 @@
     "description": "Students learn how to create a node class and learn how to create linked lists from the node list, like headers and append functions. Students also learn other important data structures and how to use them.",
     "short": "Learn how to use different data structures and the benefits of using them",
     "href": "",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, true],
     "date": "4/28/22"
   },
   {
