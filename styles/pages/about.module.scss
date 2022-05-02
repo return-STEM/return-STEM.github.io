@@ -21,6 +21,10 @@
   &_wide {
     max-width: 90vw;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: calc((90vw - 3 * 22.5em) / 2);
+    row-gap: 1em;
   }
 
   &_header {

@@ -129,10 +129,69 @@
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 100;
+
   &_inner {
     background-color: white;
     height: 85vh;
     width: 80vw;
     margin: 7.5vh auto;
+    position: relative;
+    display: flex;
+    border-radius: 1em;
+  }
+
+  &_x {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    height: 2.5em;
+
+    & span {
+      width: 2.5em;
+      height: 0.25em;
+      border-radius: 0.15em;
+      background-color: black;
+      display: block;
+      margin: 0.66em 0;
+      transition: background-color 0.15s ease-in;
+    }
+
+    &:hover span {
+      background-color: $pink;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &_1 {
+      transform: translateY(0.45em) rotate(45deg);
+    }
+
+    &_2 {
+      transform: translateY(-0.45em) rotate(-45deg);
+    }
+  }
+
+  &_img {
+    background-size: cover;
+    flex-basis: 47.5%;
+    border-radius: 1em 0 0 1em;
+  }
+
+  &_right {
+    padding: 1em 2em;
+    flex-basis: 52.5%;
+    & h3 {
+      font-family: "Inter Medium";
+      font-size: 2.5em;
+    }
+
+    & p {
+      font-family: "Quicksand Regular";
+      font-size: 1.2em;
+      text-indent: 2em;
+    }
   }
 }

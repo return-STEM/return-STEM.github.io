@@ -1,10 +1,36 @@
 import styles from "../../../styles/components/volCard.module.scss";
 import $ from "jQuery";
 import { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-export default function VolunteerCard({}) {
+import { Bio } from "../../../pages/about";
+
+import { promises as fs } from "fs";
+import path from "path";
+/*
+export async function getStaticProps() {
+  console.log("AHAHAHHAHAA");
+  let cats: string[] = ["lol", "xd", "omegalul"];
+
+  for (let i: number = 1; ; i++) {
+    try {
+      await fs.access(
+        path.join(process.cwd(), `public/img/bios/default/cat${i}`)
+      );
+      cats.push(`cat${i}`);
+      console.log(i);
+    } catch (e) {
+      console.log(e);
+      break;
+    }
+  }
+  
+  return {
+    props: { cats },
+  };
+}
+*/
+
+export default function VolunteerCard({ data, pos }: { data: Bio, pos: number}) {
   const [modal, setModal] = useState(false);
 
   useEffect(() => {
@@ -43,67 +69,81 @@ export default function VolunteerCard({}) {
     return () => {
       $("." + styles.card).off("mouseenter");
       $("." + styles.card).off("mouseleave");
-    }
+    };
   });
 
   useEffect(() => {
     $(function () {
-      if (modal) $("." + styles.modal).show();
-      else $("." + styles.modal).hide();
-      $("." + styles.card).on("click", function () {
-        setModal(!modal);
+      if (modal) $("." + styles.modal + `[data-pos='${pos}']`).show();
+      else $("." + styles.modal + `[data-pos='${pos}']`).hide();
+      $("." + styles.card + `[data-pos='${pos}']`).on("click", function () {
+        $("html").css("overflow", "hidden");
+        setModal(true);
       });
-      $("." + styles.modal).on("click", function (e) {
-        console.log("aw dang");
-        if (e.target === this)
+      $("." + styles.modal + `[data-pos='${pos}']`).on("click", function (e) {
+        if (e.target === this) {
+          $("html").css("overflow", "visible");
           setModal(false);
+        }
+      });
+      $("." + styles.modal_x + `[data-pos='${pos}']`).on("click", function () {
+        $("html").css("overflow", "visible");
+        setModal(false);
       });
     });
     return () => {
-      $("." + styles.modal).off("click");
-    }
+      $("." + styles.modal + `[data-pos='${pos}']`).off("click");
+      $("." + styles.card + `[data-pos='${pos}']`).off("click");
+      $("." + styles.modal_x + `[data-pos='${pos}']`).off("click");
+    };
   });
 
   return (
     <div>
-      <div className={styles.card}>
+      <div className={styles.card} data-pos={pos}>
         <div className={styles.card_inner}>
           <div className={styles.card_front}>
-            <img src="img/bios/jasonl.png" className={styles.card_front_img} />
+            <img
+              src={`${data.cardImg}`}
+              className={styles.card_front_img}
+            />
             <div className={styles.card_front_bot}>
-              <h3>Jason Liu</h3>
-              <h4>Head of Course Development</h4>
+              <h3>{data.name}</h3>
+              <h4>{data.position}</h4>
             </div>
           </div>
           <div className={styles.card_back}>
             <div className={styles.card_back_cont}>
               <h3>Fun Facts!</h3>
-              <div className={styles.card_back_cont_fact}>
-                <h4>Favorite Food</h4>
-                <h5>Dog</h5>
-              </div>
-              <div className={styles.card_back_cont_fact}>
-                <h4>Favorite Music</h4>
-                <h5>Trascedental Etudes</h5>
-              </div>
-              <div className={styles.card_back_cont_fact}>
-                <h4>Dream Pet</h4>
-                <h5>Ginger Tabby</h5>
-              </div>
-              <div className={styles.card_back_cont_fact}>
-                <h4>Future Job</h4>
-                <h5>Homeless</h5>
-              </div>
-              <div className={styles.card_back_cont_fact}>
-                <h4>League Main</h4>
-                <h5>Ahri</h5>
-              </div>
+              {data.facts.map((fact, index) => {
+                return (
+                  <div className={styles.card_back_cont_fact} key={index}>
+                    <h4>{fact[0]}</h4>
+                    <h5>{fact[1]}</h5>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.modal}>
-        <div className={styles.modal_inner}></div>
+      <div className={styles.modal} data-pos={pos}>
+        <div className={styles.modal_inner}>
+          <div className={styles.modal_x} data-pos={pos}>
+            <span className={styles.modal_x_1}></span>
+            <span className={styles.modal_x_2}></span>
+          </div>
+          <div
+            className={styles.modal_img}
+            style={{ backgroundImage: `url(${data.modalImg})` }}
+          />
+          <div className={styles.modal_right}>
+            <h3>{data.name}</h3>
+            {data.description.map((par, index) => {
+              return <p key={index}>{par}</p>;
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
