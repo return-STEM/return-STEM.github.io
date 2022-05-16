@@ -173,6 +173,13 @@
     }
 }
 
+.nonprofit {
+    &_pdf {
+        aspect-ratio: 3 / 4;
+        width: 50vw;
+    }
+}
+
 @include breakpointMax(1800px) {
     .header {
         --header-font: 5em;

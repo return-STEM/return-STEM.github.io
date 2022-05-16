@@ -160,7 +160,7 @@
     ]
   },
   {
-    "name": "Mahanth Komuravelli",
+    "name": "Mahanth K.",
     "position": "Outreach Manager",
     "cardImg": "/img/bios/card/mahanthk.png",
     "facts": [
@@ -237,6 +237,22 @@
     "modalImg": "/img/bios/modal/saim.jpg",
     "description": [
       "Hello! I’m Sai Minnal and I work as a course developer for Return Stem. I can code in C++ and Python and I’m starting to get involved in computer science competitions. I am also interested in learning about AI and think it is something that will be huge in the future. In my free time, I enjoy playing tennis and football and watching sports."
+    ]
+  },
+  {
+    "name": "Namit Agrawal",
+    "position": "Course Developer/Mentor",
+    "cardImg": "/img/bios/card/namita.png",
+    "facts": [
+      ["Favorite Sport", "Volleyball"],
+      ["Favorite Food", "Seafood Ramen"],
+      ["Dream Pet", "Fox"],
+      ["Pastime", "Gaming"],
+      ["Best School Subject", "Biology"]
+    ],
+    "modalImg": "/img/bios/modal/namita.png",
+    "description": [
+      "Hi, I'm Namit Agrawal, one of Return STEM's mentors and course creators. For the last few years, I've developed an interest in software engineering and coding in particular, leading me to learn programming in multiple languages such as Python, Java, and C++. Other than coding, I also like to play sports like tennis and cricket. I can't wait to share some of what I've learned with you!"
     ]
   }
 ]

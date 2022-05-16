@@ -19,17 +19,33 @@
   background-color: $gray;
 
   &_wide {
-    max-width: 90vw;
+    width: fit-content;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: calc((90vw - 3 * 22.5em) / 2);
-    row-gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    //flex-wrap: wrap;
+    //column-gap: calc((90vw - 3 * 22.5em) / 2);
+    //row-gap: 1em;
+    //justify-content: center;
   }
 
   &_header {
     font-family: "Inter Medium", sans-serif;
     font-size: 3em;
     text-align: center;
+  }
+}
+
+@include breakpoint(600px, 900px) {
+  .about_wide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include breakpointMin(600px) {
+  .about_wide {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

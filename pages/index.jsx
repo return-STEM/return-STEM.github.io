@@ -7,6 +7,9 @@ import styles from '../styles/pages/home.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock} from '@fortawesome/free-regular-svg-icons'
 
+import { useEffect } from 'react'
+import $ from 'jQuery'
+
 import { promises as fs } from 'fs'
 import path from 'path'
 
@@ -19,6 +22,17 @@ export async function getStaticProps() {
 }
 
 export default function Home({ data }) {
+/*
+  useEffect(() => {
+    $(function() {
+      $("#" + styles.nonprofit_pdf).load(function() {
+        let iframe = document.querySelector("#" + styles.nonprofit_pdf);
+        console.log(iframe);
+        iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
+      })
+    });
+  });
+*/
   return (
     <div id={styles.page}>
       <Head>
@@ -69,6 +83,13 @@ export default function Home({ data }) {
           <h1 className={styles.about_title}>Free, Free, and Free</h1>
           <p className={styles.about_text}>Return STEM; is committed to making programming accessible to all people, no matter their background. All of our courses are 100% free and all material for every course is available in their corresponding description.</p>
         </div>
+      </section>
+      <section className={styles.nonprofit}>
+        <h1>We are an Official 501c3 Nonprofit</h1>
+        <iframe 
+          src="/other/501C3.pdf"
+          className={styles.nonprofit_pdf}
+        />
       </section>
       <Footer />
     </div>
