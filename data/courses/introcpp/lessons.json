@@ -60,7 +60,7 @@
     "description": "You have learned many functions in past lessons. Now, you will learn how to write your own functions. In programming, functions are blocks of reusable code that are used to perform a certain as coded by a user.",
     "short": "Organize and reuse code with functions",
     "href": "functions",
-    "unavailable": [true, true, true],
+    "unavailable": [true, false, true],
     "date": "5/16/22"
   },
   {
