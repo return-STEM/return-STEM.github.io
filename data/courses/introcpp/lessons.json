@@ -68,7 +68,7 @@
     "description": "The C++ language comes with many powerful tools for writing programs. In this lesson we will go over some commonly used libraries in the C++ standard and explain how to read and understand documentation of them. These include <string>, <vector>, <algorithm>, and more.",
     "short": "Explore new and powerful features of the C++ language",
     "href": "cppstandardlibrary",
-    "unavailable": [true, true, true],
+    "unavailable": [true, false, true],
     "date": "5/23/22"
   },
   {
