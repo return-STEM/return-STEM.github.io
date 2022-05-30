@@ -76,7 +76,7 @@
     "description": "After writing many programs, you are bound to find some problems that you just don't know how to fix. This lesson goes over some of the techniques to find the bugs in your program and how to use the C++ debugger. It also includes a brief introduction to exceptions in C++.",
     "short": "Find and squash the bugs in your program",
     "href": "debugging",
-    "unavailable": [true, true, true],
+    "unavailable": [false, false, true],
     "date": "5/30/22"
   },
   {
