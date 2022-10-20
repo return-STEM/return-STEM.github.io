@@ -4,7 +4,7 @@
     "description": "You will review basic concepts that are covered in an introductory course, to refresh your memory or to fill in gaps in your knowledge. You will use the concepts covered in this review in this course. ",
     "short": "Review of introductory Python concepts",
     "href": "review",
-    "unavailable": [false, false, true],
+    "unavailable": [true, false, true],
     "date": "3/17/22"
   },
   {
@@ -20,7 +20,7 @@
     "description": "In this lesson, you will learn how to implement and write classes. You will be able to represent objects in the real world with classes and implement them with attributes and methods.",
     "short": "Learn how to write your own classes",
     "href": "defining-class",
-    "unavailable": [false, false, true],
+    "unavailable": [true, false, true],
     "date": "3/31/22"
   },
   {
@@ -28,7 +28,7 @@
     "description": "In this lesson, you will learn inheritance and polymorphism, and how they are implemented in the classes you will write. You learn how to use them to improve the code that you write.",
     "short": "Learn how to implement inheritance and polymorphism",
     "href": "inheritance-and-polymorphism",
-    "unavailable": [false, false, true],
+    "unavailable": [true, false, true],
     "date": "4/07/22"
   },
   {
@@ -36,7 +36,7 @@
     "description": "In this lesson, you will learn the implementation of common algorithms such as binary search. You will learn the process of developing an algorithm and Big O notation. ",
     "short": "Learn the process of algorithmic thinking and improve your problem solving skills",
     "href": "algorithmic-thinking",
-    "unavailable": [false, false, true],
+    "unavailable": [true, false, true],
     "date": "4/14/22"
   },
   {
@@ -52,7 +52,7 @@
     "description": "Students learn how to create a node class and learn how to create linked lists from the node list, like headers and append functions. Students also learn other important data structures and how to use them.",
     "short": "Learn how to use different data structures and the benefits of using them",
     "href": "data-structures",
-    "unavailable": [false, false, true],
+    "unavailable": [true, false, true],
     "date": "4/28/22"
   },
   {

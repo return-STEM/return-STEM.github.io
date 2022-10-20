@@ -20,7 +20,7 @@
     "description": "Learn how to use the console, a way to input and output information with Python. You learn how to manipulate strings, one of the most important data types in Python.",
     "short": "Learn how to use the console in Python",
     "href": "consoleio",
-    "unavailable": [false, false, false],
+    "unavailable": [true, false, true],
     "date": "3/30/22"
   },
   {
