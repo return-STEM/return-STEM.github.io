@@ -11,7 +11,7 @@
     "title": "Object-oriented Programming",
     "description": "This lesson covers the basic idea and principles of object-oriented programming. You will learn concepts related to object-oriented programming, such as encapsulation, inheritance, abstraction, and polymorphism.",
     "short": "Introduction to object-oriented programming",
-    "href": "",
+    "href": "object-oriented",
     "unavailable": [false, false, true],
     "date": "3/24/22"
   },
@@ -19,7 +19,7 @@
     "title": "Defining a Class",
     "description": "In this lesson, you will learn how to implement and write classes. You will be able to represent objects in the real world with classes and implement them with attributes and methods.",
     "short": "Learn how to write your own classes",
-    "href": "",
+    "href": "defining-class",
     "unavailable": [false, false, true],
     "date": "3/31/22"
   },
@@ -27,16 +27,16 @@
     "title": "Inheritance and Polymorphism",
     "description": "In this lesson, you will learn inheritance and polymorphism, and how they are implemented in the classes you will write. You learn how to use them to improve the code that you write.",
     "short": "Learn how to implement inheritance and polymorphism",
-    "href": "",
-    "unavailable": [true, true, true],
+    "href": "inheritance-and-polymorphism",
+    "unavailable": [false, false, true],
     "date": "4/07/22"
   },
   {
     "title": "Algorithmic Thinking",
     "description": "In this lesson, you will learn the implementation of common algorithms such as binary search. You will learn the process of developing an algorithm and Big O notation. ",
     "short": "Learn the process of algorithmic thinking and improve your problem solving skills",
-    "href": "",
-    "unavailable": [true, true, true],
+    "href": "algorithmic-thinking",
+    "unavailable": [false, false, true],
     "date": "4/14/22"
   },
   {
@@ -51,8 +51,8 @@
     "title": "Linked Lists and other data structures",
     "description": "Students learn how to create a node class and learn how to create linked lists from the node list, like headers and append functions. Students also learn other important data structures and how to use them.",
     "short": "Learn how to use different data structures and the benefits of using them",
-    "href": "",
-    "unavailable": [true, true, true],
+    "href": "data-structures",
+    "unavailable": [false, false, true],
     "date": "4/28/22"
   },
   {
