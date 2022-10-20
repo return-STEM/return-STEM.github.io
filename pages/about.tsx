@@ -63,6 +63,8 @@ export default function About({ bios, cats }) {
         <link rel="shortcut icon" href="/img/common/Logo.svg" />
       </Head>
       <Nav></Nav>
+      <section className={styles.mission}>
+      </section>
       <section className={styles.header}></section>
       <section className={styles.about}>
         <h1 className={styles.about_header}>Meet our Team</h1>

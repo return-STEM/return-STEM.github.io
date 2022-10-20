@@ -85,7 +85,7 @@ export default function Home({ data }) {
         </div>
       </section>
       <section className={styles.nonprofit}>
-        <h1>We are an Official 501c3 Nonprofit</h1>
+        <h1 className={styles.nonprofit_title}>We are an Official 501c3 Nonprofit</h1>
         <iframe 
           src="/other/501C3.pdf"
           className={styles.nonprofit_pdf}

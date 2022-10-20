@@ -174,6 +174,15 @@
 }
 
 .nonprofit {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5em 0.5em 2.5em 0.5em;
+
+    &_title {
+        font-family: "Inter Medium";
+        font-size: 2.5em;
+    }
+
     &_pdf {
         aspect-ratio: 3 / 4;
         width: 50vw;
@@ -197,12 +206,20 @@
             padding: 2em 0em 4.5em 0em;
         }
     }
+
+    .nonprofit_pdf {
+        width: 60vw;
+    }
 }
 
 @for $i from 0 through 3 {
     @include breakpoint(calc(1350px - $i * 250px), calc(1600px - $i * 250px)) {
         .about {
             font-size: calc(2.75em - $i * 0.25em);
+        }
+
+        .nonprofit_title {
+            font-size: calc(2.5em - $i * 0.15em);
         }
     }
 }
@@ -215,6 +232,17 @@
             &_right {
                 height: 16em;
             }
+        }
+    }
+
+    
+    .nonprofit {
+        &_title {
+            font-size: 2em;
+        }
+
+        &_pdf {
+            width: 70vw;
         }
     }
 }
@@ -307,6 +335,13 @@
             &_img {
                 width: 65%;
             }
+        }
+    }
+
+    .nonprofit {
+        font-size: 1.5rem;
+        &_pdf {
+            width: 85vw;
         }
     }
 }

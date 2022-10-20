@@ -16,15 +16,15 @@
     ]
   },
   {
-    "name": "Samuel Lihn",
+    "name": "Samuel Lihn", 
     "position": "Head of Mentors",
     "cardImg": "/img/bios/card/saml.jpg",
     "facts": [
-      ["Favorite Food", "Dog"],
-      ["Favorite Music", "Transcendental Etudes"],
-      ["Dream Pet", "Whiteboard Cat"],
-      ["Future Job", "Homeless"],
-      ["League Main", "Ahri"]
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"]
     ],
     "modalImg": "/img/bios/modal/saml.jpg",
     "description": [
@@ -32,15 +32,15 @@
     ]
   },
   {
-    "name": "Arha Gatram",
+    "name": "Arha Gatram", 
     "position": "Head of Marketing",
     "cardImg": "/img/bios/card/arhag.jpg",
     "facts": [
-      ["Favorite Food", "Dog"],
-      ["Favorite Music", "Transcendental Etudes"],
-      ["Dream Pet", "Whiteboard Cat"],
-      ["Future Job", "Homeless"],
-      ["League Main", "Ahri"]
+      ["Favorite Food", "BBQ Pizza"],
+      ["Music Genre", "Classic Rock"],
+      ["Dream Pet", "Cat"],
+      ["Instrument", "Guitar"],
+      ["Favorite Movie", "V for Vendetta"]
     ],
     "modalImg": "/img/bios/modal/arhag.jpg",
     "description": [
@@ -48,15 +48,15 @@
     ]
   },
   {
-    "name": "Aarav Agarwal",
+    "name": "Aarav Agarwal", 
     "position": "Head of Media",
     "cardImg": "/img/bios/card/aarava.jpg",
     "facts": [
-      ["Favorite Food", "Dog"],
-      ["Favorite Music", "Transcendental Etudes"],
-      ["Dream Pet", "Whiteboard Cat"],
-      ["Future Job", "Homeless"],
-      ["League Main", "Ahri"]
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"]
     ],
     "modalImg": "/img/bios/modal/aarava.jpg",
     "description": [
@@ -160,15 +160,15 @@
     ]
   },
   {
-    "name": "Mahanth K.",
+    "name": "Mahanth K.", 
     "position": "Outreach Manager",
     "cardImg": "/img/bios/card/mahanthk.png",
     "facts": [
-      ["Favorite Sport", "Volleyball"],
-      ["Favorite Food", "Seafood Ramen"],
-      ["Dream Pet", "Fox"],
-      ["Pastime", "Gaming"],
-      ["Best School Subject", "Biology"]
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"]
     ],
     "modalImg": "/img/bios/modal/mahanthk.png",
     "description": [
@@ -176,15 +176,15 @@
     ]
   },
   {
-    "name": "Deepti Rao",
+    "name": "Deepti Rao", 
     "position": "Mentor",
     "cardImg": "",
     "facts": [
-      ["Favorite Sport", "Volleyball"],
-      ["Favorite Food", "Seafood Ramen"],
-      ["Dream Pet", "Fox"],
-      ["Pastime", "Gaming"],
-      ["Best School Subject", "Biology"]
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"]
     ],
     "modalImg": "",
     "description": [
@@ -224,15 +224,15 @@
     ]
   },
   {
-    "name": "Sai Minnal",
+    "name": "Sai Minnal", 
     "position": "Course Developer",
     "cardImg": "/img/bios/card/saim.jpg",
     "facts": [
-      ["Favorite Sport", "Volleyball"],
-      ["Favorite Food", "Seafood Ramen"],
-      ["Dream Pet", "Fox"],
-      ["Pastime", "Gaming"],
-      ["Best School Subject", "Biology"]
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"]
     ],
     "modalImg": "/img/bios/modal/saim.jpg",
     "description": [
@@ -240,15 +240,15 @@
     ]
   },
   {
-    "name": "Namit Agrawal",
+    "name": "Namit Agrawal", 
     "position": "Course Developer/Mentor",
     "cardImg": "/img/bios/card/namita.png",
     "facts": [
-      ["Favorite Sport", "Volleyball"],
-      ["Favorite Food", "Seafood Ramen"],
-      ["Dream Pet", "Fox"],
-      ["Pastime", "Gaming"],
-      ["Best School Subject", "Biology"]
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"]
     ],
     "modalImg": "/img/bios/modal/namita.png",
     "description": [
