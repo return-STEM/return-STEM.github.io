@@ -37,7 +37,7 @@
     "cardImg": "/img/bios/card/arhag.jpg",
     "facts": [
       ["Favorite Food", "BBQ Pizza"],
-      ["Music Genre", "Classic Rock"],
+      ["Favorite Music", "Classic Rock"],
       ["Dream Pet", "Cat"],
       ["Instrument", "Guitar"],
       ["Favorite Movie", "V for Vendetta"]
@@ -100,11 +100,11 @@
     "position": "Course Developer",
     "cardImg": "/img/bios/card/adityaa.jpg",
     "facts": [
-      ["Favorite Sport", "Volleyball"],
-      ["Favorite Food", "Seafood Ramen"],
-      ["Dream Pet", "Fox"],
-      ["Pastime", "Gaming"],
-      ["Best School Subject", "Biology"]
+      ["Favorite Sport", "Boxing"],
+      ["Favorite Music", "Grime"],
+      ["Favorite Food", "Chicken Wings"],
+      ["Favorite Subject", "Engineering"],
+      ["Dream Vacation", "Disney World"]
     ],
     "modalImg": "/img/bios/modal/adityaa.jpg",
     "description": [
@@ -132,11 +132,11 @@
     "position": "Course Developer",
     "cardImg": "/img/bios/card/ishaang.png",
     "facts": [
-      ["Favorite Sport", "Volleyball"],
-      ["Favorite Food", "Seafood Ramen"],
-      ["Dream Pet", "Fox"],
-      ["Pastime", "Gaming"],
-      ["Best School Subject", "Biology"]
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"],
+      ["I love", "Return STEM"]
     ],
     "modalImg": "/img/bios/modal/ishaang.png",
     "description": [
@@ -173,6 +173,22 @@
     "modalImg": "/img/bios/modal/mahanthk.png",
     "description": [
       "Hey, I’m Mahanth, an outreach manager at Return STEM. Throughout the past year or two, I have gained a developing passion for business, marketing, and also computer science. I aim to bring Return Stem to as many people as possible, and to help as many people a possible!"
+    ]
+  },
+  {
+    "name": "Rudra Singh",
+    "position": "Mentor",
+    "cardImg": "/img/bios/card/rudras.jpg",
+    "facts": [
+      ["Favorite Food", "Poptarts"],
+      ["Favorite Music", "Rap"],
+      ["Dream Pet", "Shark"],
+      ["Favorite Sport", "Basketball"],
+      ["Pastime", "Sleeping"]
+    ],
+    "modalImg": "/img/bios/modal/rudras.jpg",
+    "description": [
+      "I'm Rudra, mentor and co founder of Return STEM. I started programming in the third grade with Scratch, and since then game development has become one of my passions. My other hobbies include skateboarding, working out, and cooking. I can't wait to help foster the next generation of programmers!"
     ]
   },
   {
